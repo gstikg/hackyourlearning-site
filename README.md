@@ -10,7 +10,7 @@ Further information can be found in the "Dependencies" section below.
 1. Install [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm/blob/master/README.md)
 2. Clone repository
 ```
-$ git clone https://git.phys.ucalgary.ca/aurorax/main-webapp
+$ git clone https://github.com/Hack-Your-Learning/hackyourlearning-site.git
 ```
 3. Install NodeJS version
 ```
