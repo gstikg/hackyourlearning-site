@@ -34,12 +34,6 @@ There are several NPM commands that can be run to launch parts of the applicatio
 - `start` starts the application and makes it available locally at `localhost:3000` in your browser. The page will reload if you make edits. You will also see any lint errors in the console.
 - `test` launches the test runner in the interactive watch mode (more info [here](https://facebook.github.io/create-react-app/docs/running-tests))
 - `build` runs build sequence to create a package of the application in the `build` folder
-- `lint` runs ESLint against every .js & .jsx file found in the `src` folder and outputs a report of lint error & warnings to the user if any are found.
-- `lint:fix` functions like `lint` except it automatically resolves a majority of inconsistencies.
-
-### Other Commands
-
--  `eslint <filename>` will apply the linter to a specific file.
 
 <br />
 
