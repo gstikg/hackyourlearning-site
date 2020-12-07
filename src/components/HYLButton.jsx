@@ -12,10 +12,10 @@ const colors = {
 
 const HYLButton = ({text, color, onClick}) => {
     return (
-        <div className="container" style={{
+        <div className="button__container" style={{
             background: colors[color],
         }}>
-            <div className="button"><a className="text">{text}</a></div>
+            <div className="button__inner"><a className="button__text">{text}</a></div>
         </div>
     )
 }
