@@ -6,10 +6,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.container:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .button {
@@ -17,7 +17,6 @@
 
     width: 165px;
     height: 45px;
-    // text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +32,3 @@
     font-style: normal;
     font-size: 17px;
 }
-
-// Width diff = 6px
-// height diff = 8px
