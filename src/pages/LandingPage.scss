@@ -1,0 +1,84 @@
+.tempNavBar {
+    background-color: #FFD275;
+    height: 50px;
+    display: flex;
+}
+
+.mainBody {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+
+    .logoText {
+        width: 900px;
+        
+    }
+
+    .eventDetails {
+        width: 400px;
+        margin-left: 5%;
+        text-align: center;
+        padding-top: 0.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .registerButtons {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 4%;
+        padding-left: 4%;
+
+    }
+
+    .date {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #747474;
+    }
+
+    .countdown {
+        display: flex;
+        justify-content: space-evenly;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+
+        color: #747474;
+
+        &__number {
+            font-size: 50px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+
+.logo__noText {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width:1388px) {
+    .mainBody {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eventDetails {
+        margin-top: 5%;
+    }
+}
+
