@@ -1,5 +1,5 @@
 import React from 'react';
-import './HYLButton.scss';
+import '../stylesheets/HYLButton.scss';
 
 const colors = {
     blue: "#92E0EE",
@@ -10,7 +10,7 @@ const colors = {
     purple: "#320A28",
 }
 
-const HYLButton = ({text, color}) => {
+const HYLButton = ({text, color, onClick}) => {
     return (
         <div className="container" style={{
             background: colors[color],

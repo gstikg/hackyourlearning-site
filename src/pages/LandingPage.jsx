@@ -1,5 +1,5 @@
 import React from 'react';
-import './LandingPage.scss';
+import '../stylesheets/LandingPage.scss';
 import Logo from '../assets/Light_Logo.png';
 import LogoText from '../assets/Light_Logo_Text.png';
 import HYLButton from '../components/HYLButton.jsx';

@@ -2,11 +2,14 @@
     width: 171px;
     height: 53px;
 
-    background: #92E0EE;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container:hover {
+    cursor: pointer;
 }
 
 .button {
