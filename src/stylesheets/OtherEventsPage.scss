@@ -1,0 +1,111 @@
+// Following is styling for the landing image, title & buttons
+.other-events-container {
+  // Global variable for the home page
+  --home-alt-bg: #f9fafc;
+  background-color: #fff;
+
+  // Styling for Homepage banner & image
+  .other-banner {
+    display: flex;
+    flex-direction: column;
+
+    // Move the image to below the navbar
+    margin: -77px 0 0;
+
+    // Ensures that the content on the image stays on the image
+    width: 100%;
+    min-width: 475px;
+    height: 100vh;
+    max-height: 900px;
+    min-height: 450px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    // Making the scrollbar "invisible"
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+  }
+
+  // Vertically Centers content on image
+  .home-banner .home-banner--container {
+    margin: auto 0;
+  }
+
+  // Styling for buttons on the homepage banner
+  .home-banner a.btn-home {
+    color: var(--nav-active);
+    font-size: 0.875rem;
+    line-height: 1.125;
+
+    border: 1px solid #fff;
+    border-radius: 50px;
+
+    padding: 0.75rem 1.25rem;
+    margin: 0 1rem 1rem 0;
+
+    transition: all 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06);
+
+    &:hover {
+      color: var(--nav-bg);
+      background-color: var(--nav-active);
+
+      text-decoration: none;
+      box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.05),
+        0 4px 10px rgba(255, 255, 255, 0.25);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+      text-decoration: none;
+    }
+  }
+
+  .home-banner p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.15rem;
+    font-weight: 300;
+
+    display: table;
+
+    margin: 0 auto 1.75rem 0;
+  }
+
+  h1.home-banner--title {
+    text-align: left;
+    color: #fff;
+    font-size: 5.95rem;
+
+    line-height: 1;
+    letter-spacing: -0.0625rem;
+
+    margin: 5rem 0 1rem;
+
+    @media (max-width: 576px) {
+      font-size: 5rem;
+    }
+  }
+}
+
+h1.other--title {
+  text-align: center;
+  font-weight: bold;
+
+  padding: 30px 0 25px;
+  margin: 0;
+}
+
+// Styling for the upcoming events content
+.other-events-container .upcoming-events--container {
+
+}
+
+.other-events-container .past-events--container {}

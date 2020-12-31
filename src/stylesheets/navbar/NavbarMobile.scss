@@ -1,0 +1,95 @@
+/*
+ * File created to separate content specific to mobile/tablet formatting
+ * and to reduce the amount of content in Navbar.css
+*/
+
+.navbar {
+
+  // Styling the toggle icon border for mobile/tablet devices
+  .navbar-toggler {
+    color: var(--white);
+    font-size: 1rem;
+
+    border-radius: 50%;
+
+    padding: 0.5rem;
+
+    &:hover,
+    &.collapsed:hover {
+      border: 1.5px solid;
+      border-color: var(--white);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    // Styling the toggle icon for mobile/tablet devices
+    span.navbar-toggler-icon {
+      width: 1.35rem;
+      height: 1.35rem;
+    }
+  }
+}
+
+// Stlying the dropdown for mobile devices
+@media (max-width: 992px) {
+  .navbar #basic-navbar-nav {
+
+    .nav-link {
+      line-height: 7px;
+      margin: 30px 0 0 15px;
+
+      &.first-link {
+        margin: 30px 0 0 15px;
+        width: 60px;
+
+        &:hover::after { width: 58px }
+      }
+
+      &.second-link,
+      &.third-link {
+        width: 100px;
+
+        &:hover::after { width: 95px }
+      }
+
+      &.last-link {
+        margin: 30px 0 27px 15px;
+        width: 40px;
+
+        &:hover::after { width: 35px }
+      }
+    }
+
+    // Styling for "Login" as it's outside the <nav> tag
+    a.btn-navbar {
+      border: none;
+      line-height: 7px;
+
+      margin: 2.5px 0 30px 15px;
+      padding: 0;
+      width: 150px;
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--yellow);
+        box-shadow: none;
+      }
+
+      // Styling used for animated underline on hover
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 8px;
+        background: var(--orange);
+        transition: width .3s;
+      }
+
+      &:hover::after { width: 140px;}
+
+      &:active { opacity: 75%; }
+    }
+  }
+}

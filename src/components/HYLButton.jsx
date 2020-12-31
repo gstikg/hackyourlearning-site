@@ -1,23 +1,37 @@
+// Importing Components from node_modules
 import React from 'react';
+import PropTypes from 'prop-types';
+
+// Importing Styles
 import '../stylesheets/HYLButton.scss';
 
-const colors = {
-    blue: "#92E0EE",
-    green: "#C9D9B2",
-    yellow: "#FFD275",
-    orange: "#F9AA84",
-    red: "#F28193",
-    purple: "#320A28",
-}
+const HYLButton = ({
+  children,
+  color,
+  width,
+  onClick
+}) => (
+  <div
+    className={`button__container ${color}`}
+    href="#"
+    onClick={onClick}
+    style={{
+      width: {width},
+    }}
+  >
+    <div className="button__inner">
+      <p className="button__text">
+        {children}
+      </p>
+    </div>
+  </div>
+);
 
-const HYLButton = ({text, color, onClick}) => {
-    return (
-        <div className="button__container" style={{
-            background: colors[color],
-        }}>
-            <div className="button__inner"><a className="button__text">{text}</a></div>
-        </div>
-    )
-}
+HYLButton.propTypes = {
+  children: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default HYLButton;

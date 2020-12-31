@@ -1,39 +1,76 @@
 .button {
-    &__container {
-        width: 171px;
-        height: 53px;
-    
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        &:hover {
-            cursor: pointer;
-        }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 175px;
+    height: 55px;
+
+    border-radius: 15px;
+
+    -webkit-box-shadow: 0 10px 6px -6px rgba(120, 120, 120, 0.25);
+    -moz-box-shadow: 0 10px 6px -6px rgba(120, 120, 120, 0.25);
+    box-shadow: 0 10px 6px -6px rgba(120, 120, 120, 0.25);
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      &:active { box-shadow: none; }
     }
-    
-    
-    
-    &__inner {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
-        width: 165px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 3px solid #FDFDFD;
-        box-sizing: border-box;
-        border-radius: 13px;
-    
-    }
-    
-    &__text {
-        color: #FDFDFD;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-size: 17px;
-    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+
+    width: 165px;
+    height: 45px;
+
+
+    border: 3px solid var(--white);
+    border-radius: 13px;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+
+    letter-spacing: 0.75px;
+
+    margin: 7px 0 0;
+  }
 }
 
+// Styling for button colours
+.button__container.blue {
+  background-color: var(--blue);
+  &:hover { background-color: var(--off-blue); }
+}
+
+.button__container.green {
+  background-color: var(--green);
+  &:hover { background-color: var(--off-green); }
+}
+
+.button__container.orange {
+  background-color: var(--orange);
+  &:hover { background-color: var(--off-orange); }
+}
+
+.button__container.pink {
+  background-color: var(--pink);
+  &:hover { background-color: var(--off-pink); }
+}
+
+.button__container.purple {
+  background-color: var(--purple);
+  &:hover { background-color: var(--off-purple); }
+}
+
+.button__container.yellow {
+  background-color: var(--yellow);
+  &:hover { background-color: var(--off-yellow); }
+}

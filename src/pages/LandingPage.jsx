@@ -1,25 +1,25 @@
+// Importing Components from node_modules
 import React from 'react';
-import '../stylesheets/LandingPage.scss';
-import Logo from '../assets/Light_Logo.png';
-import LogoText from '../assets/Light_Logo_Text.png';
-import HYLButton from '../components/HYLButton.jsx';
 
+// Importing Project-Defined Components
+import HYLButton from '../components/HYLButton';
+
+// Importing Styles
+import '../stylesheets/LandingPage.scss';
+
+// Importing Static Assets
+import Logo from '../assets/Light_Logo_Text.png';
 
 const LandingPage = () => (
   <>
-    {/* Replace this div with actual navbar */}
-    <div className="tempNavBar">
-        This is where Nav Bar will go!
-    </div>
-
     <div className="mainBody">
-      <img src={LogoText} className ="logoText" />
+      <img src={Logo} alt="organizations logo" className="logoText" />
       <div className="eventDetails">
         <div className="registerButtons">
-          <HYLButton text="Become a Hacker" color="blue" />
-          <HYLButton text="Become a Mentor" color="red"/>
+          <HYLButton color="blue"> Become a Hacker</HYLButton>
+          <HYLButton color="pink">Become a Mentor</HYLButton>
         </div>
-        <a className="date">March 27, 2021 • Virtual event</a>
+        <h5 className="date">March 27, 2021 • Virtual event</h5>
         <div className="countdown">
           <div>
             <div className="countdown__number">30</div>
@@ -38,9 +38,6 @@ const LandingPage = () => (
             <div className="countdown__text">Seconds</div>
           </div>
         </div>
-        {/* <div>30   14    53      21</div>
-        <div>Days Hours Minutes Seconds</div> */}
-
       </div>
     </div>
   </>
