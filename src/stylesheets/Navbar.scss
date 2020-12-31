@@ -1,0 +1,110 @@
+// Overwritting styling for the default navbar
+.navbar {
+  background-color: var(--yellow);
+  padding: 0.765rem 1.5rem !important;
+
+  z-index: 10;
+
+  // Removing default behaviour to add a box on focus
+  a:focus,
+  span:focus,
+  img:focus {
+    outline: none;
+  }
+
+  // navbar-brand = logo & name
+  >.navbar-brand {
+    padding: 0 0 0 10px;
+    margin: 0;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  #basic-navbar-nav {
+    >.navbar-nav {
+      margin: 0 1px 0 0;
+
+      .dropdown {
+
+        // Maintain highlight NavDropown has when dropdown menu is opened
+        &.show .dropdown-toggle.nav-link {
+          color: var(--nav-hover) !important;
+        }
+
+        // Styling the dropdown arrow icons -- Removing default dropdown arrow icon
+        .dropdown-toggle.nav-link {
+          &::after {
+            display: none;
+          }
+
+          svg {
+            margin-left: 0.35rem;
+          }
+
+          &.active {
+            color: var(--nav-active) !important;
+            border-bottom: 1px solid var(--nav-active) !important;
+
+            &:hover {
+              color: var(--nav-active);
+            }
+          }
+        }
+      }
+    }
+
+    // Following code is styles the right-side of navbar
+    a.btn-navbar,
+    .nav-link {
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: var(--header-font);
+      letter-spacing: 2px;
+    }
+
+    .nav-link {
+      padding: 0.75rem 1.5rem;
+
+      // Styling used for animated underline on hover
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: var(--orange);
+        transition: width .3s;
+      }
+
+      &:hover::after { width: 100%; }
+
+      &:active { opacity: 75%; }
+    }
+
+    // Formatting for Other Events button at the end of the Nav
+    a.btn-navbar {
+      border: 3px solid;
+      border-radius: 15px;
+
+      padding: 0.35rem 1rem;
+      margin-left: 0.625rem;
+
+      transition: all 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06);
+
+      &:hover {
+        background-color: var(--off-white);
+        color: var(--orange);
+        text-decoration: none;
+
+        box-shadow:
+          0 2px 5px rgba(0, 0, 0, 0.05),
+          0 2px 10px rgba(249, 170, 133, 0.5);
+      }
+
+      &:active { box-shadow: none; }
+    }
+  }
+}

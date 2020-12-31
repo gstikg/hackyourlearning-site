@@ -1,13 +1,64 @@
+// File used for global styles
+
+// Importing fonts for use
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+// Global variables used for styling
+:root {
+  // Colour scheme
+
+  // Light
+  --blue: #92E0EE;
+  --green: #C9D9B2;
+  --yellow: #FFD275;
+  --orange: #F9AA84;
+  --pink: #F28193;
+  --purple: #320A28;
+  --white: #FDFDFD;
+
+  // Off colours ("dark")
+  --off-blue: #72BFCD;
+  --off-green: #A6BC85;
+  --off-yellow: #E0AF4A;
+  --off-orange: #DF8357;
+  --off-pink: #DA576C;
+  --off-purple: #382333;
+  --off-white: #EFEFEF;
+
+  // Text colours
+  --body-color: #969696;
+  --body-font: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  --header-color: #747474;
+  --header-font: -apple-system, BlinkMacSystemFont, 'Space Mono', sans-serif;
+}
+
+// Removing any existing formatting
 * {
   margin: 0;
   padding: 0;
 }
 
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height: 100%;
+}
+
+body {
+  background-color: var(--white);
+}
+
+// Additional text styling
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  color: var(--body-color);
+  font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

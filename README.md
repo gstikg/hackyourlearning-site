@@ -1,5 +1,5 @@
 # Hack Your Learning Main Website
-This repository contains the Hack Your Learning web application (https://hackyourlearning.ca). The application is written in NodeJS and React.
+This repository contains the Hack Your Learning website (https://hackyourlearning.ca). The application is written in NodeJS and React.
 <br />
 <br />
 

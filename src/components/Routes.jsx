@@ -2,9 +2,12 @@
 import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+// Importing project-defined components
+
 // Importing the page components for routing
 import LandingPage from '../pages/LandingPage';
-
+import OtherEventsPage from '../pages/OtherEventsPage';
+import Navbar from './Navbar';
 /*
   Function used to update each page's <title> tag
   <title> tag is typically found in the public folder
@@ -31,12 +34,21 @@ function Routes() {
         exact
         path="/"
         render={() => (
-          <>
-            {/* <Navbar /> */}
-            <Page title="Hack You Learning">
-              <LandingPage />
-            </Page>
-          </>
+          <Page title="Hack You Learning">
+            <Navbar />
+            <LandingPage />
+          </Page>
+        )}
+      />
+
+      <Route
+        exact
+        path="/other-events"
+        render={() => (
+          <Page title="HYL Other Events">
+            <Navbar />
+            <OtherEventsPage />
+          </Page>
         )}
       />
 
