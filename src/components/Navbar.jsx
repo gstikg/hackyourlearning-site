@@ -7,7 +7,6 @@ import { Nav, Navbar as ReactNavbar } from 'react-bootstrap';
 import '../stylesheets/navbar/Navbar.scss';
 import '../stylesheets/navbar/NavbarMobile.scss';
 
-
 // Importing Images
 import logo from '../assets/Light_Logo.png';
 
@@ -15,66 +14,64 @@ import logo from '../assets/Light_Logo.png';
   Passing in the className allows the styling of the Navbar to be customized based on what page we
   are on
 */
-const Navbar = ({ className }) => {
-  return (
-    <>
-      <ReactNavbar
-        className={className}
-        expand="lg"
-        variant="dark"
-      >
+const Navbar = () => (
+  <>
+    <ReactNavbar
+      expand="lg"
+      variant="dark"
+    >
 
-        {/* Logo on nav */}
-        <ReactNavbar.Brand>
-          <NavLink
-            to="/"
+      {/* Logo on nav */}
+      <ReactNavbar.Brand>
+        <NavLink
+          to="/"
+        >
+          <img
+            src={logo}
+            alt="Hack Your Learning logo"
+            className="d-inline-block align-top"
+          />
+        </NavLink>
+      </ReactNavbar.Brand>
+
+      {/* Toggle for {sm | md | lg } devices */}
+      <ReactNavbar.Toggle
+        aria-controls="basic-navbar-nav"
+      />
+
+      <ReactNavbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link
+            href="#"
+            target="_blank"
+            className="first-link"
           >
-            <img
-              src={logo}
-              alt="Hack Your Learning logo"
-              className="d-inline-block align-top"
-            />
-          </NavLink>
-        </ReactNavbar.Brand>
+            About
+          </Nav.Link>
 
-        {/* Toggle for {sm | md | lg } devices */}
-        <ReactNavbar.Toggle
-          aria-controls="basic-navbar-nav"
-        />
+          <Nav.Link
+            href="#"
+            target="_blank"
+            className="second-link"
+          >
+            Schedule
+          </Nav.Link>
 
-        <ReactNavbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link
-              href="#"
-              target="_blank"
-              className="first-link"
-            >
-              About
-            </Nav.Link>
+          <Nav.Link
+            href="#"
+            target="_blank"
+            className="third-link"
+          >
+            Sponsors
+          </Nav.Link>
 
-            <Nav.Link
-              href="#"
-              target="_blank"
-              className="second-link"
-            >
-              Schedule
-            </Nav.Link>
-
-            <Nav.Link
-              href="#"
-              target="_blank"
-              className="third-link"
-            >
-              Sponsors
-            </Nav.Link>
-
-            <Nav.Link
-              href="#"
-              target="_blank"
-              className="last-link"
-            >
-              FAQ
-            </Nav.Link>
+          <Nav.Link
+            href="#"
+            target="_blank"
+            className="last-link"
+          >
+            FAQ
+          </Nav.Link>
 
           {/* Login "button" */}
           <NavLink
@@ -83,13 +80,10 @@ const Navbar = ({ className }) => {
           >
             Other Events
           </NavLink>
-          </Nav>
-
-
-        </ReactNavbar.Collapse>
-      </ReactNavbar>
-    </>
-  );
-};
+        </Nav>
+      </ReactNavbar.Collapse>
+    </ReactNavbar>
+  </>
+);
 
 export default Navbar;

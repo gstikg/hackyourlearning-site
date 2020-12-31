@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const OtherEventsPage = () => {
-  return (
-    <div>
+const OtherEventsPage = () => (
+  <div />
+);
 
-    </div>
-  )
-}
-
-export default OtherEventsPage
+export default OtherEventsPage;
