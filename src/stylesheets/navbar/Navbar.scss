@@ -1,7 +1,7 @@
 // Overwritting styling for the default navbar
 .navbar {
   background-color: var(--yellow);
-  padding: 0.765rem 1.5rem !important;
+  padding: 0.5rem 1.5rem !important;
 
   z-index: 10;
 
@@ -64,17 +64,22 @@
       font-weight: bold;
       font-family: var(--header-font);
       letter-spacing: 2px;
+      line-height: 5px;
     }
 
     .nav-link {
-      padding: 0.75rem 1.5rem;
+      padding: 1.25rem 1.5rem 0rem;
+
+      &.last-link {
+        padding: 1.25rem 1.75rem 0.5rem 1.5rem;
+      }
 
       // Styling used for animated underline on hover
       &::after {
         content: '';
         display: block;
         width: 0;
-        height: 3px;
+        height: 8px;
         background: var(--orange);
         transition: width .3s;
       }
@@ -88,6 +93,7 @@
     a.btn-navbar {
       border: 3px solid;
       border-radius: 15px;
+      line-height: inherit;
 
       padding: 0.35rem 1rem;
       margin-left: 0.625rem;

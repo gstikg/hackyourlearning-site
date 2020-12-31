@@ -55,6 +55,7 @@ const Navbar = ({ className }) => {
             <Nav.Link
               href="#"
               target="_blank"
+              className="second-link"
             >
               Schedule
             </Nav.Link>
@@ -62,6 +63,7 @@ const Navbar = ({ className }) => {
             <Nav.Link
               href="#"
               target="_blank"
+              className="third-link"
             >
               Sponsors
             </Nav.Link>
@@ -69,11 +71,10 @@ const Navbar = ({ className }) => {
             <Nav.Link
               href="#"
               target="_blank"
+              className="last-link"
             >
               FAQ
             </Nav.Link>
-
-          </Nav>
 
           {/* Login "button" */}
           <NavLink
@@ -82,6 +83,8 @@ const Navbar = ({ className }) => {
           >
             Other Events
           </NavLink>
+          </Nav>
+
 
         </ReactNavbar.Collapse>
       </ReactNavbar>
