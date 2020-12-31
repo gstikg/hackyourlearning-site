@@ -4,7 +4,9 @@ import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as ReactNavbar } from 'react-bootstrap';
 
 // Importing styles
-import '../stylesheets/Navbar.scss';
+import '../stylesheets/navbar/Navbar.scss';
+import '../stylesheets/navbar/NavbarMobile.scss';
+
 
 // Importing Images
 import logo from '../assets/Light_Logo.png';
@@ -45,6 +47,7 @@ const Navbar = ({ className }) => {
             <Nav.Link
               href="#"
               target="_blank"
+              className="first-link"
             >
               About
             </Nav.Link>

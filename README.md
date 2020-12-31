@@ -12,16 +12,11 @@ Further information can be found in the "Dependencies" section below.
 ```
 $ git clone https://github.com/Hack-Your-Learning/hackyourlearning-site.git
 ```
-3. Install NodeJS version
-```
-$ nvm install
-$ nvm use
-```
-4. Install NodeJS library dependencies
+3. Install NodeJS library dependencies
 ```
 $ npm install
 ```
-5. Start the application
+4. Start the application
 ```
 $ npm start
 ```

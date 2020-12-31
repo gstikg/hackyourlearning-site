@@ -1,0 +1,65 @@
+/*
+ * File created to separate content specific to mobile/tablet formatting
+ * and to reduce the amount of content in Navbar.css
+*/
+
+.navbar {
+
+  // Styling the toggle icon border for mobile/tablet devices
+  .navbar-toggler {
+    color: var(--white);
+    font-size: 1rem;
+
+    border-radius: 50%;
+
+    padding: 0.5rem;
+
+    &:hover,
+    &.collapsed:hover {
+      border: 1.5px solid;
+      border-color: var(--white);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    // Styling the toggle icon for mobile/tablet devices
+    span.navbar-toggler-icon {
+      width: 1.35rem;
+      height: 1.35rem;
+    }
+  }
+}
+
+// Stlying the dropdown for mobile devices
+@media (max-width: 992px) {
+  .navbar #basic-navbar-nav {
+
+    a.btn-navbar,
+    .nav-link {
+      line-height: 2.5rem;
+      padding: 2.5px 0 0 15px;
+      margin: 0;
+
+      &:hover { opacity: 75%; }
+    }
+
+    .nav-link {
+      &::after { content: none; }
+      &.first-link { padding: 20px 0 0 15px; }
+    }
+
+    // Styling for "Login" as it's outside the <nav> tag
+    a.btn-navbar {
+      text-align: right;
+      border: none;
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--yellow);
+        box-shadow: none;
+      }
+    }
+  }
+}
