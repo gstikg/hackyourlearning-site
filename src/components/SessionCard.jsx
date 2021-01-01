@@ -19,22 +19,13 @@ const SessionCard = ({
   signup, // signup link
 }) => {
   // Defining state to help render the sidebar element on toggle
-  const [isVisible, setIsVisible] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
-      {(isVisible)
-        && (
-          <SessionModal
-            event={event} // ala event name
-            date={date}
-            signup={signup} // signup link
-            setIsVisible={setIsVisible}
-          >
-            { children}
-          </SessionModal>
-        )}
-
       <div className="session-card--container">
         <div className="session-image">
           <img
@@ -55,12 +46,22 @@ const SessionCard = ({
           </p>
           <HYLButton
             color="orange"
-            onClick={() => { setIsVisible(true); }}
+            onClick={handleShow}
           >
             More Info
           </HYLButton>
         </div>
       </div>
+
+      <SessionModal
+        event={event} // ala event name
+        date={date}
+        signup={signup} // signup link
+        show={show}
+        handleClose={handleClose}
+      >
+        {children}
+      </SessionModal>
     </>
   );
 };

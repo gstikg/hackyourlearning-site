@@ -1,73 +1,50 @@
-.session-modal--overlay {
-  z-index: 29;
-  position: fixed;
-  top: 0;
-  left: 0;
+h2.session-info--event-name {
+  font-weight: bold;
+  text-align: center;
+
+  margin: 15px 25px 0;
+}
+
+h4.session-info--date {
+  text-align: center;
+
+  margin: 10px 0 15px;
+}
+
+.session-description p {
+  text-align: left;
+  padding: 0 50px;
+}
+
+.button__container {
+  width: 125px;
+
+  margin: 5px auto;
+
+  .button__inner {
+    width: 115px;
+  }
+}
+
+// Following is used to overwrite Bootstrap Modal
+.fade.modal-backdrop.show {
 
   height: 100%;
   width: 100%;
-
-  background: rgba(9, 0, 0, 0.50)
 }
 
-.session-modal--container {
-  z-index: 30;
+.modal-dialog {
+  min-width: 750px;
 
-  position: fixed;
-  top: 50px;
-
-  background-color: var(--white);
-
-  border: 0.75px solid #969696;
-  border-radius: 15px;
-  box-sizing: border-box;
-
-  min-width: 75%;
-  max-width: 75%;
-
-  padding: 50px;
-  @media (max-width: 576px) {padding: 50px;}
-
-  margin: 0 9px 30px;
-
-  svg.session-modal--close-icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-
-    color: var(--header-color);
-
-    &:hover {
-      cursor: pointer;
-      color: var(--body-color);
-    }
+  @media (max-width: 768px) {
+    min-width: 70vw;
   }
 
-  h2.session-info--event-name {
-    font-weight: bold;
-    text-align: center;
+  .modal-content {
+    border-radius: 15px;
 
-    margin: 15px 25px 0;
-  }
-
-  h4.session-info--date {
-    text-align: center;
-
-    margin: 10px 0 35px;
-  }
-
-  .session-description p {
-    text-align: left;
-    padding: 0 75px;
-  }
-
-  .button__container {
-    width: 125px;
-
-    margin: 25px auto 0;
-
-    .button__inner {
-      width: 115px;
+    .modal-header {
+      padding: 6px 10px 10px 0;
     }
   }
 }
