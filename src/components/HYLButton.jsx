@@ -8,16 +8,14 @@ import '../stylesheets/HYLButton.scss';
 const HYLButton = ({
   children,
   color,
-  width,
-  onClick
+  onClick,
 }) => (
   <div
     className={`button__container ${color}`}
-    href="#"
+    role="button"
+    tabIndex={0}
     onClick={onClick}
-    style={{
-      width: {width},
-    }}
+    onMouseDown={(e) => e.preventDefault()}
   >
     <div className="button__inner">
       <p className="button__text">
@@ -30,7 +28,6 @@ const HYLButton = ({
 HYLButton.propTypes = {
   children: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 

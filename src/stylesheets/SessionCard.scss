@@ -1,0 +1,58 @@
+.session-card--container {
+  text-align: center;
+
+  border: 0.75px solid #969696;
+  border-radius: 15px;
+
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  min-width: 225px;
+  max-width: 225px;
+
+  min-height: 350px;
+  max-height: 350px;
+
+  margin: 0 9px 30px;
+
+  .session-image {
+
+    min-height: 125px;
+    max-height: 125px;
+
+    img.session-img--img {
+      width: 100px;
+      margin: 25px
+    }
+  }
+
+  h6.session-info--event-name {
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+
+    margin: 15px 25px 0;
+  }
+
+  p.session-info--date {
+    margin: 15px 0 0;
+  }
+
+  p.session-info--location {
+    margin: 3px 0 15px;
+
+    &.one-line {
+      margin: 3px 0 35px;
+    }
+  }
+
+  .button__container {
+    width: 125px;
+
+    margin: 0 auto 30px;
+
+    .button__inner {
+      width: 115px;
+    }
+  }
+}

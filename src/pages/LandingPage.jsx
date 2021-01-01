@@ -29,10 +29,10 @@ const LandingPage = () => (
         <div className="button-group--register">
           <HYLButton color="blue">
             Become a Hacker
-          </ HYLButton>
+          </HYLButton>
           <HYLButton color="pink">
             Become a Mentor
-          </ HYLButton>
+          </HYLButton>
         </div>
 
         <h5 className="event-info--date">March 27, 2021 • Virtual Event</h5>
