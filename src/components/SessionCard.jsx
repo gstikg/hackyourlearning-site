@@ -85,7 +85,7 @@ SessionCard.propTypes = {
   date: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  children: PropTypes.objectOf(PropTypes.object()).isRequired,
+  children: PropTypes.object.isRequired,
   signup: PropTypes.string,
 };
 
