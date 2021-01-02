@@ -82,7 +82,7 @@ SessionModal.propTypes = {
   event: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   signup: PropTypes.string.isRequired,
-  children: PropTypes.objectOf(PropTypes.object).isRequired,
+  children: PropTypes.object.isRequired,
   show: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
 };
