@@ -40,6 +40,7 @@ const SessionModal = ({
       <Modal.Footer>
         <HYLButton
           color="green"
+          // Will open the link on the new page when clicked
           onClick={(e) => {
             e.preventDefault();
             window.open(
@@ -81,7 +82,7 @@ SessionModal.propTypes = {
   event: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   signup: PropTypes.string.isRequired,
-  children: PropTypes.object.isRequired,
+  children: PropTypes.objectOf(PropTypes.object).isRequired,
   show: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
 };
