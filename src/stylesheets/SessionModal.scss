@@ -1,0 +1,58 @@
+h2.session-info--event-name {
+  font-weight: bold;
+  text-align: center;
+
+  margin: 15px 25px 0;
+}
+
+h4.session-info--date {
+  text-align: center;
+
+  margin: 10px 0 15px;
+}
+
+.session-description p {
+  text-align: left;
+  padding: 0 50px;
+}
+
+.button__container {
+  width: 125px;
+
+  margin: 5px auto;
+
+  .button__inner {
+    width: 115px;
+  }
+}
+
+// Following is used to overwrite Bootstrap Modal
+.fade.modal-backdrop.show {
+
+  height: 100%;
+  width: 100%;
+}
+
+.modal-dialog {
+  min-width: 750px;
+
+  @media (max-width: 768px) {
+    min-width: 70vw;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+
+    .modal-header {
+      padding: 6px 15px 10px 0;
+
+      button.close {
+        outline: none;
+
+        &:focus {
+          outline: none
+        }
+      }
+    }
+  }
+}
