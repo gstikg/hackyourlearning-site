@@ -41,6 +41,7 @@ const HYLButton = ({
 // Default prop declaration
 HYLButton.defaultProps = {
   width: '125',
+  onClick: null,
 };
 
 // Prop Validation
@@ -48,7 +49,7 @@ HYLButton.propTypes = {
   children: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   width: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };
 
 export default HYLButton;
