@@ -44,14 +44,13 @@ const SessionModal = ({
             e.preventDefault();
             window.open(
               `${signup}`,
-              '_blank'
-            )
+              '_blank',
+            );
           }}
         >
           Sign Up
         </HYLButton>
       </Modal.Footer>
-
     );
   }
 
@@ -82,7 +81,7 @@ SessionModal.propTypes = {
   event: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   signup: PropTypes.string.isRequired,
-  children: PropTypes.object.isRequired,
+  children: PropTypes.objectOf(PropTypes.object()).isRequired,
   show: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
 };
