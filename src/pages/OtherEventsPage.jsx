@@ -74,7 +74,7 @@ const OtherEventsPage = () => (
             date="February 20th, 2021"
             location="Online"
             image={logo}
-            signup=""
+            signup="Coming Soon"
           >
             <div className="session-description">
               <p>
@@ -112,7 +112,7 @@ const OtherEventsPage = () => (
             date="March 27th, 2021"
             location="Online"
             image={logo}
-            signup=""
+            signup="Coming Soon"
           >
             <div className="session-description">
               <p>

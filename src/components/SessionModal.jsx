@@ -16,35 +16,73 @@ const SessionModal = ({
   show,
   handleClose,
   children, // aka description
-}) => (
-  <Modal show={show} onHide={handleClose}>
-    <Modal.Header closeButton />
-    <h2 className="session-info--event-name">
-      {event}
-    </h2>
+}) => {
+  // Conditionally render specific buttons, if any, based on the input passed in {signup}
+  let button;
 
-    <h4 className="session-info--date">
-      {date}
-    </h4>
+  if (signup === '') {
+    button = null;
+  } else if (signup === 'Coming Soon') {
+    // For upcoming events with an existing sign up form
+    button = (
+      <Modal.Footer>
+        <HYLButton
+          color="green--disabled"
+          width="205"
+        >
+          Sign Up Coming Soon
+        </HYLButton>
+      </Modal.Footer>
+    );
+  } else {
+    // If the event is upcoming but no sign up form exists
+    button = (
+      <Modal.Footer>
+        <HYLButton
+          color="green"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              `${signup}`,
+              '_blank'
+            )
+          }}
+        >
+          Sign Up
+        </HYLButton>
+      </Modal.Footer>
 
-    <Modal.Body>
-      {children}
-    </Modal.Body>
+    );
+  }
 
-    <Modal.Footer>
-      <HYLButton color="green">
-        Sign Up
-      </HYLButton>
-    </Modal.Footer>
-  </Modal>
-);
+  return (
+    <Modal show={show} onHide={handleClose}>
+      <Modal.Header closeButton />
+
+      <h2 className="session-info--event-name">
+        {event}
+      </h2>
+
+      <h4 className="session-info--date">
+        {date}
+      </h4>
+
+      {/* Event Description */}
+      <Modal.Body>
+        {children}
+      </Modal.Body>
+
+      {button}
+    </Modal>
+  );
+};
 
 // Prop Validation
 SessionModal.propTypes = {
   event: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   signup: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
   show: PropTypes.bool.isRequired,
   handleClose: PropTypes.func.isRequired,
 };

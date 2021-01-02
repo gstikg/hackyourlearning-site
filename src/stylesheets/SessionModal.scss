@@ -44,7 +44,15 @@ h4.session-info--date {
     border-radius: 15px;
 
     .modal-header {
-      padding: 6px 10px 10px 0;
+      padding: 6px 15px 10px 0;
+
+      button.close {
+        outline: none;
+
+        &:focus {
+          outline: none
+        }
+      }
     }
   }
 }

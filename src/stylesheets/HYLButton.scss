@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
 
-    width: 175px;
     height: 55px;
 
     border-radius: 15px;
@@ -32,7 +31,6 @@
     display: flex;
     justify-content: center;
 
-    width: 165px;
     height: 45px;
 
     border: 3px solid var(--white);
@@ -59,29 +57,71 @@
 .button__container.blue {
   background-color: var(--blue);
   &:hover { background-color: var(--off-blue); }
+
+  &--disabled {
+    box-shadow: none;
+    background-color: var(--off-blue);
+
+    cursor: default;
+  }
 }
 
 .button__container.green {
   background-color: var(--green);
   &:hover { background-color: var(--off-green); }
+
+  &--disabled {
+    box-shadow: none;
+    background-color: var(--off-green);
+
+    cursor: default;
+  }
 }
 
 .button__container.orange {
   background-color: var(--orange);
   &:hover { background-color: var(--off-orange); }
+
+  &--disabled {
+    box-shadow: none;
+    background-color: var(--off-orange);
+
+    cursor: default;
+  }
 }
 
 .button__container.pink {
   background-color: var(--pink);
   &:hover { background-color: var(--off-pink); }
+
+  &--disabled {
+    box-shadow: none;
+    background-color: var(--off-pink);
+
+    cursor: default;
+  }
 }
 
 .button__container.purple {
   background-color: var(--purple);
   &:hover { background-color: var(--off-purple); }
+
+  &--disabled {
+    box-shadow: none;
+    background-color: var(--off-purple);
+
+    cursor: default;
+  }
 }
 
 .button__container.yellow {
   background-color: var(--yellow);
   &:hover { background-color: var(--off-yellow); }
+
+  &--disabled {
+    box-shadow: none;
+    background-color: var(--off-yellow);
+
+    cursor: default;
+  }
 }

@@ -27,6 +27,8 @@ const SessionCard = ({
   return (
     <>
       <div className="session-card--container">
+
+        {/* Image associated with the session */}
         <div className="session-image">
           <img
             src={image}
@@ -34,6 +36,8 @@ const SessionCard = ({
             className="session-img--img"
           />
         </div>
+
+        {/* Basic session information */}
         <div className="session-info">
           <h6 className="session-info--event-name">
             {event}
@@ -44,6 +48,8 @@ const SessionCard = ({
           <p className={`session-info--location ${className}`}>
             {location}
           </p>
+
+          {/* Button to reveal modal with more information about session */}
           <HYLButton
             color="orange"
             onClick={handleShow}
@@ -79,7 +85,7 @@ SessionCard.propTypes = {
   date: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
   signup: PropTypes.string,
 };
 
