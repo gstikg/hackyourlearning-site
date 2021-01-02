@@ -2,14 +2,14 @@
 import React from 'react';
 
 // Importing Project-Defined Components
-// import LandingBanner from '../components/LandingBanner';
+import LandingBanner from '../components/LandingBanner';
 
 // Importing Styles
 import '../stylesheets/LandingPage.scss';
 
 const LandingPage = () => (
   <div className="landing-container">
-    {/* <LandingBanner /> */}
+    <LandingBanner />
 
     {/* Following content is for the About section */}
     <div className="landing-about--container">
