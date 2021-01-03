@@ -1,0 +1,91 @@
+.landing-banner--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  gap: 35px;
+
+  -webkit-box-pack: center;
+
+  -ms-flex-pack: center;
+
+  justify-content: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+
+  // Ensures that the content on the image stays on the image
+  width: 100%;
+  min-width: 475px;
+
+  padding: 75px 25px 50px;
+
+  .landing-banner--logo-container img.landing-banner--logo {
+    height: 140px;
+    margin: 30px 0 0;
+  }
+
+  .event-info--container {
+    text-align: center;
+
+    // Styling for buttons
+    .button-group--register {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+
+      width: 415px;
+      margin: 0 auto 15px;
+    }
+
+    // Styling for the Countdown
+    .event-info--countdown {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+
+      width: 325px;
+      margin: 0 auto;
+
+      p {
+        color: var(--header-color);
+      }
+
+      p.counter-item--value {
+        font-size: 45px;
+        margin: 0;
+      }
+
+      p.counter-item--title {
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+// Some mobile styling
+@media (max-width: 576px) {
+  .landing-banner--container {
+    .landing-banner--logo-container img.landing-banner--logo {
+      height: 100px;
+    }
+  }
+}
+
+// Requires custom width if it were to correct instantly
+@media (max-width: 992px) {
+  .landing-banner--container {
+    padding: 60px 25px 45px;
+
+    .landing-banner--logo-container img.landing-banner--logo {
+      margin: 0;
+    }
+  }
+}
