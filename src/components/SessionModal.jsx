@@ -28,7 +28,7 @@ const SessionModal = ({
       <Modal.Footer>
         <HYLButton
           color="green--disabled"
-          width="205"
+          width="225"
         >
           Sign Up Coming Soon
         </HYLButton>

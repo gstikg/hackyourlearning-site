@@ -31,14 +31,14 @@
 
     // Styling for buttons
     .button-group--register {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       justify-content: space-between;
 
       width: 415px;
       margin: 0 auto 15px;
 
+      display: -webkit-box;
+      display: -ms-flexbox;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
     }

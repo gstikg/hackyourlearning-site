@@ -1,10 +1,10 @@
 # Workflow name
-name: Firebase Deploy
+name: Firebase Deploy on Merge
 
 # Where our workflow runs: Any time there is a push to main branch
 on:
   push:
-    branches: 
+    branches:
     - main
 
 # Jobs that will be executed
