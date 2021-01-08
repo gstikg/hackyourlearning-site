@@ -21,11 +21,14 @@ const LandingPage = () => (
     <div className="landing-schedule--container">
       <div className="section-break" />
       <h3>Schedule</h3>
-        <p>
-          The Hack Your Learning schedule is currenty <b>unavailable</b>.
-          <br />
-          Please check back at a later date.
-        </p>
+      <p>
+        The Hack Your Learning schedule is currenty
+        {' '}
+        <b>unavailable</b>
+        .
+        <br />
+        Please check back at a later date.
+      </p>
     </div>
 
     {/* Following content is for the Sponsors section */}
