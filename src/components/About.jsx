@@ -1,8 +1,6 @@
 // Importing Components from node_modules
 import React from 'react';
 
-// Importing Project-Defined Components
-
 // Importing Styles
 import '../stylesheets/About.scss';
 
