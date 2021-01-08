@@ -12,7 +12,7 @@
   width: 100%;
   min-width: 475px;
 
-  padding: 75px 25px 50px;
+  padding: 100px 25px;
 
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -82,8 +82,8 @@
 // Requires custom width if it were to correct instantly
 @media (max-width: 992px) {
   .landing-banner--container {
-    padding: 60px 25px 45px;
-
+    padding: 70px 25px 55px;
+    
     .landing-banner--logo-container img.landing-banner--logo {
       margin: 0;
     }
