@@ -33,6 +33,14 @@ const LandingBanner = () => (
         <HYLButton
           color="pink"
           width="175"
+          // Will open the link on the new page when clicked
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              'https://forms.gle/MJdTzDtxkyP4xQg29',
+              '_blank',
+            );
+          }}
         >
           Become a Mentor
         </HYLButton>
