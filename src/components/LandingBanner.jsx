@@ -27,6 +27,13 @@ const LandingBanner = () => (
         <HYLButton
           color="blue"
           width="175"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              'https://forms.gle/R2tgjp2fDUzZNt9z9',
+              '_blank',
+            );
+          }}
         >
           Become a Hacker
         </HYLButton>
