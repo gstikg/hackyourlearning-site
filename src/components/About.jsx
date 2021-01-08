@@ -16,7 +16,7 @@ const About = () => (
       <div className="section-break" />
 
       <div className="about-block about-block--about row alt-bg">
-        <div className="col-lg-5 col-md-6 d-none d-md-block img-block--left">
+        <div className="col-lg-5 col-md-6 d-none d-md-block img-block img-block--left">
           <img
             src={about}
             alt="about image filler"
@@ -47,7 +47,7 @@ const About = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="col-lg-5 col-md-6 d-none d-md-block img-block--right">
+        <div className="col-lg-5 col-md-6 d-none d-md-block img-block img-block--right">
           <img
             src={schulich}
             alt="schulich school of engineering"
