@@ -14,6 +14,11 @@ h4.session-info--date {
 .session-description p {
   text-align: left;
   padding: 0 50px;
+
+  &.tip {
+    margin: 20px 10px;
+    text-align: center;
+  }
 }
 
 .button__container {
@@ -28,7 +33,6 @@ h4.session-info--date {
 
 // Following is used to overwrite Bootstrap Modal
 .fade.modal-backdrop.show {
-
   height: 100%;
   width: 100%;
 }

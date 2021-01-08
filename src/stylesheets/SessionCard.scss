@@ -15,6 +15,10 @@
 
   margin: 0 9px 30px;
 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
   .session-image {
 
     min-height: 125px;
@@ -34,16 +38,12 @@
     margin: 15px 25px 0;
   }
 
-  p.session-info--date {
-    margin: 15px 0 0;
-  }
+  p.session-info--date { margin: 15px 0 0; }
 
   p.session-info--location {
     margin: 3px 0 15px;
 
-    &.one-line {
-      margin: 3px 0 35px;
-    }
+    &.one-line { margin: 3px 0 35px; }
   }
 
   .button__container {
@@ -51,8 +51,6 @@
 
     margin: 0 auto 30px;
 
-    .button__inner {
-      width: 115px;
-    }
+    .button__inner { width: 115px; }
   }
 }
