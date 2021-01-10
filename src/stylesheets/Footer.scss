@@ -6,11 +6,10 @@
     -ms-flex-flow: row wrap;
     -ms-flex-line-pack: justify;
     flex-grow: 1;
-
     margin: 0 auto;
-    
     background-color: var(--purple);
     padding: 40px 56px 0px;
+    overflow-x: hidden;
 
     .footer-title {
         font-size: 16px;
@@ -29,38 +28,55 @@
         margin: 0px;
         background-color: var(--white);
         height: 2px;
-        overflow: visible;
+        overflow: hidden;
     }
+    
 }
 
 .footer-upper {
     padding: 0px 68px;
+    padding-bottom: 40px;
     .footer-about-inner {
         width: 250px;
     }
 }
 
 .footer-site-links {
+    .footer-site-links-wrapper {
+        display: flex;
+        justify-content: center;
+        .footer-hack-info, .footer-other-events {
+            padding: 0px;
+            text-align: center;
+            .footer-other-events-wrapper, .footer-hack-info-wrapper {
+                display: inline-block;
+                margin: 0 auto;
+                text-align: left;
+            }
+
+        }
+    }
     font-size: 12px;
     padding-bottom: 5px;
+    .footer-title {
+        padding-bottom: 6px;
+    }
     a {
         font-family: var(--body-font);
         color: var(--footer-color);
         padding: 5px 0px;
-    }
-    a::after {
-        content: "\a";
-        white-space: pre;
-    }
-    .footer-hack-info {
-        
-    }
-    .footer-other-events {
-        text-align: left;
+        font-weight: medium;
+        .footer-site-links-text {
+            display: block;
+            padding-bottom: 6px;
+        }
     }
 }
 
 .footer-contact-info {
+    .footer-social-wrapper {
+        float: right;
+    }
     .footer-social-icons {
         padding-top: 15px;
     }
@@ -77,6 +93,11 @@
         fill: var(--yellow); 
         cursor: pointer;
     }
+}
+
+.footer-separator {
+    
+    margin: 0 -9999rem;
 }
 
 .footer-footer {
@@ -121,7 +142,7 @@
         }
 
         .footer-contact-info {
-            display: block;
+            display: flex;
             .footer-title {
                 display: flex;
                 margin: 0 auto;
