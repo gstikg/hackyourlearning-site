@@ -8,6 +8,7 @@
     flex-grow: 1;
 
     margin: 0 auto;
+    
     background-color: var(--purple);
     padding: 40px 56px 0px;
 
@@ -91,5 +92,50 @@
     }
 }
 
+@media (max-width: 1160px) {
+    .footer-upper {
+        display: block;
+        
+        .footer-about, .footer-site-links, .footer-contact-info {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+        
+        .footer-about {
+            width: auto;
+            .footer-about-inner {
+                width: 100%;
+            }
+            padding-bottom: 0px;
+        }
 
+        .footer-site-links {
+            .row {
+                width: inherit;
+                .footer-hack-info, .footer-other-events {
+                    padding: 20px 0px;
+                }
+            }
+        }
 
+        .footer-contact-info {
+            display: block;
+            .footer-title {
+                display: flex;
+                margin: 0 auto;
+                width: 50%;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    }
+
+    .footer-footer {
+        display: block;
+        .footer-conduct {
+            text-align: left; 
+        }
+    } 
+}
