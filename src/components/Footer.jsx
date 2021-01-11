@@ -102,7 +102,7 @@ const Footer = () => (
             </div>
             <div className="footer-social-icons">
               <svg width="46" height="46" viewBox="0 0 24 24" fill= "white" xmlns="http://www.w3.org/2000/svg">
-                <a href="https://www.facebook.com/Hack-Your-Learning-104061298155807" target="_blank" rel="noreferrer">
+                <a href="https://www.facebook.com/Hack-Your-Learning-104061298155807" target="_blank" rel="noopener noreferrer">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
