@@ -101,7 +101,7 @@ const Footer = () => (
               <h3 className="footer-title">Get In Touch</h3>
             </div>
             <div className="footer-social-icons">
-              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill= "white" xmlns="http://www.w3.org/2000/svg">
                 <a href="https://www.facebook.com/Hack-Your-Learning-104061298155807" target="_blank" rel="noreferrer">
                   <path
                     fillRule="evenodd"
@@ -113,7 +113,7 @@ const Footer = () => (
                   />
                 </a>
               </svg>
-              <svg width="46" height="46" viewBox="0 0 24 24" id="ig-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="46" height="46" viewBox="0 0 24 24" id="ig-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <a href="/#" target="_blank">
                   <path
                     fillRule="evenodd"
@@ -125,7 +125,7 @@ const Footer = () => (
                   />
                 </a>
               </svg>
-              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <a href="/#" target="_blank">
                   <path
                     fillRule="evenodd"
@@ -138,7 +138,7 @@ const Footer = () => (
                   />
                 </a>
               </svg>
-              <svg width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="46" height="46" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <a href="/#" target="_blank">
                   <path
                     fillRule="evenodd"
