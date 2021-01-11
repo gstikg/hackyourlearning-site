@@ -12,7 +12,7 @@ const Footer = () => (
     <>
         <div className = "footer-container">
             <div class="row footer-upper">
-                <div class="col-sm-3 footer-about">
+                <div class="col-xl-3 footer-about">
                     <div class = "footer-about-inner">
                         <img
                             src={logo}
@@ -31,7 +31,7 @@ const Footer = () => (
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-6 footer-site-links">
+                <div class="col-xl-6 footer-site-links">
                     <div class = "footer-site-links-wrapper">
                         <div class = "col-md footer-hack-info">
                             <div class = "footer-hack-info-wrapper">
@@ -95,7 +95,7 @@ const Footer = () => (
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 footer-contact-info">
+                <div class="col-xl-3 footer-contact-info">
                     <div class = "footer-social-wrapper">
                         <div class = "footer-social-title">
                             <h3 class = "footer-title">Get In Touch</h3>
@@ -110,7 +110,7 @@ const Footer = () => (
                                     0 0 0-2-2H6z"/>
                                 </a>
                             </svg>
-                            <svg width="46" height="46" viewBox = "0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="46" height="46" viewBox = "0 0 24 24" id = "ig-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <a href = "#" target = "_blank">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v12a4
                                     4 0 0 1-4 4H6a4 4 0 0 1-4-4V6zm4-2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0
@@ -143,10 +143,10 @@ const Footer = () => (
                 <hr></hr>
             </div>
             <div class = "row footer-footer">
-                <div class = "col-md footer-copyright">
+                <div class = "col-xl-6 footer-copyright">
                     <Emoji text = "Copyright &#xa9; 2020 Hack Your Learning | Made with :heart: in Calgary" />
                 </div>
-                <div class = "col-md footer-conduct">
+                <div class = "col-xl-6 footer-conduct">
                     <a href = "#" target = "_blank">Code of Conduct</a>
                 </div>
             </div>
