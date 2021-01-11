@@ -163,7 +163,7 @@ const Footer = () => (
           <Emoji text="Copyright &#xa9; 2020 Hack Your Learning | Made with :heart: in Calgary" />
         </div>
         <div className="col-xl-6 footer-conduct">
-          <a href={codeOfConduct} target="_blank">Code of Conduct</a>
+          <a href={codeOfConduct} target="_blank" rel="noopener noreferrer">Code of Conduct</a>
         </div>
       </div>
     </div>
