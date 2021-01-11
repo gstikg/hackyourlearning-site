@@ -7,6 +7,7 @@ import '../stylesheets/Footer.scss';
 
 // Importing Static Assets
 import logo from '../assets/Light_Logo_Text.png';
+import codeOfConduct from '../assets/HYL_code_of_conduct.pdf';
 
 const Footer = () => (
   <>
@@ -101,7 +102,7 @@ const Footer = () => (
               <h3 className="footer-title">Get In Touch</h3>
             </div>
             <div className="footer-social-icons">
-              <svg width="46" height="46" viewBox="0 0 24 24" fill= "white" xmlns="http://www.w3.org/2000/svg">
+              <svg width="46" height="46" viewBox="0 0 24 24" className="fb-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <a href="https://www.facebook.com/Hack-Your-Learning-104061298155807" target="_blank" rel="noopener noreferrer">
                   <path
                     fillRule="evenodd"
@@ -113,8 +114,8 @@ const Footer = () => (
                   />
                 </a>
               </svg>
-              <svg width="46" height="46" viewBox="0 0 24 24" id="ig-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <a href="/#" target="_blank">
+              <svg width="46" height="46" viewBox="0 0 24 24" className="ig-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <a href="https://www.instagram.com/uofc_hyl/" target="_blank" rel="noopener noreferrer">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -126,7 +127,7 @@ const Footer = () => (
                 </a>
               </svg>
               <svg width="46" height="46" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <a href="/#" target="_blank">
+                <a href="https://www.linkedin.com/company/hack-your-learning" target="_blank" rel="noopener noreferrer">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -139,7 +140,7 @@ const Footer = () => (
                 </a>
               </svg>
               <svg width="46" height="46" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <a href="/#" target="_blank">
+                <a href="mailto:hello@hackyourlearning.ca" target="_blank" rel="noopener noreferrer">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -162,7 +163,7 @@ const Footer = () => (
           <Emoji text="Copyright &#xa9; 2020 Hack Your Learning | Made with :heart: in Calgary" />
         </div>
         <div className="col-xl-6 footer-conduct">
-          <a href="/#" target="_blank">Code of Conduct</a>
+          <a href={codeOfConduct} target="_blank">Code of Conduct</a>
         </div>
       </div>
     </div>
