@@ -3,8 +3,8 @@ import React from 'react';
 
 // Importing Project-Defined Components
 import LandingBanner from '../components/LandingBanner';
-import About from '../components/About'
-import Footer from '../components/Footer'
+import About from '../components/About';
+import Footer from '../components/Footer';
 
 // Importing Styles
 import '../stylesheets/LandingPage.scss';
