@@ -3,7 +3,8 @@ import React from 'react';
 
 // Importing Project-Defined Components
 import LandingBanner from '../components/LandingBanner';
-import About from '../components/About'
+import About from '../components/About';
+import Footer from '../components/Footer';
 
 // Importing Styles
 import '../stylesheets/LandingPage.scss';
@@ -40,6 +41,8 @@ const LandingPage = () => (
       FAQ
     </div>
 
+    {/* Following content is for the Footer section */}
+    <Footer />
   </div>
 );
 

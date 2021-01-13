@@ -119,7 +119,7 @@ const OtherEventsPage = () => (
               <p className="tip">
                 <i>
                   “A person becomes a star within the limits.”
-                <br />
+                  <br />
                 </i>
                 Probably the most imposing characteristic of a hackathon is the time limit. So be ready to turn this threat into an opportunity and learn as much as you can in just a day!
               </p>
