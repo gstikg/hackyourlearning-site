@@ -6,7 +6,7 @@ import '../stylesheets/Sponsor.scss'
 
 const Sponsor = () => (
     <>
-        <p>Our 2021 Sponsor</p>
+        <h3><b>Our 2021 Sponsor</b></h3>
         <div class="zoom">
             <a href="https://www.hsbc.ca/" target="_blank" rel="noopener noreferrer">
                 <img src={HSBC} alt="Schulich logo" width="500" height="300"></img>
@@ -14,7 +14,7 @@ const Sponsor = () => (
         </div>
 
 
-        <p>Our Partners</p>
+        <h3><b>Our Partners</b></h3>
 
         <div class>
             <div class="zoom imgContainer">
