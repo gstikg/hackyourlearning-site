@@ -6,16 +6,20 @@ import '../stylesheets/Sponsor.scss'
 
 const Sponsor = () => (
     <>
-        <h3><b>Our 2021 Sponsor</b></h3>
+        <div class="text">
+            <h3><b>Our 2021 Sponsor</b></h3>
+        </div>
+
         <div class="zoom">
             <a href="https://www.hsbc.ca/" target="_blank" rel="noopener noreferrer">
                 <img src={HSBC} alt="Schulich logo" width="500" height="300"></img>
             </a>
         </div>
 
-
-        <h3><b>Our Partners</b></h3>
-
+        <div class="text">
+            <h3><b>Our Partners</b></h3>
+        </div>
+        
         <div class>
             <div class="zoom imgContainer">
                 <a href="https://schulich.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
