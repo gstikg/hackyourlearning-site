@@ -18,13 +18,16 @@ const Sponsor = () => (
             </p>
 
 
-            <p class ="brtext">
+            <p class="brtext">
                 Interested in sponsoring? Want more information? Email us at <b>
                     sponsor@hackyourlearning.ca
                 </b>
             </p>
         </div>
 
+        <div class="button_position">
+            <button class="sponsor_button"><b>Sponsor the Impact</b></button>
+        </div>
 
         <div class="center text">
             <h3><b>Our Sponsors</b></h3>
