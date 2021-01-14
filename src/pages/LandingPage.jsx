@@ -5,7 +5,7 @@ import React from 'react';
 import LandingBanner from '../components/LandingBanner';
 import About from '../components/About';
 import Footer from '../components/Footer';
-
+import Sponsor from '../components/Sponsor';
 // Importing Styles
 import '../stylesheets/LandingPage.scss';
 
@@ -33,7 +33,7 @@ const LandingPage = () => (
 
     {/* Following content is for the Sponsors section */}
     <div className="landing-sponsors--container">
-      Sponsors
+      <Sponsor />
     </div>
 
     {/* Following content is for the FAQ section */}
