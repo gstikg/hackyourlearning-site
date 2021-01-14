@@ -2,6 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as ReactNavbar } from 'react-bootstrap';
+import { Link } from 'react-scroll'
 
 // Importing styles
 import '../stylesheets/navbar/Navbar.scss';
@@ -41,37 +42,25 @@ const Navbar = () => (
 
       <ReactNavbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="first-link"
-          >
+          {/* the "to" prop refers to the classname */}
+          {/* Make sure to put classname of the parent div */}
+          <Link className="nav-link" to="about-info--container" spy={true} smooth={true}>
             About
-          </Nav.Link>
+          </Link>
 
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="second-link"
-          >
+          <Link className="nav-link" to="landing-schedule--container" spy={true} smooth={true}>
             Schedule
-          </Nav.Link>
+          </Link>
 
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="third-link"
-          >
-            Sponsors
-          </Nav.Link>
-
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="last-link"
-          >
+          {/* Add "to" once component is made */}
+          <Link className="nav-link" to="" spy={true} smooth={true}>
+            Schedule
+          </Link>
+ 
+          {/* Add "to" once component is made */}
+          <Link className="nav-link" to="" spy={true} smooth={true}>
             FAQ
-          </Nav.Link>
+          </Link>
 
           {/* Login "button" */}
           <NavLink

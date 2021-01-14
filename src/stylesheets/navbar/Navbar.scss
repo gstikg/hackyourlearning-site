@@ -62,6 +62,8 @@
       -o-transition: width .3s;
     }
 
+    &:hover {cursor: pointer;}
+
     &:hover::after { width: 100%; }
 
     &:active { opacity: 0.75; }
