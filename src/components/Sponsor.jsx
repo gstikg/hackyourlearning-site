@@ -3,12 +3,12 @@ import schulich from '../assets/schulich.png'; // Import schulich logo
 import HSBC from '../assets/HSBC.png';
 import zoo from '../assets/zoo.png';
 import '../stylesheets/Sponsor.scss';
-import HYLButton from '../components/HYLButton';
+import HYLButton from './HYLButton';
 
 const Sponsor = () => (
   <>
     <div id="gradient">
-      <div className="center text" >
+      <div className="center text">
         <h2><b>Meet Our Sponsors</b></h2>
       </div>
 
@@ -17,14 +17,14 @@ const Sponsor = () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-      </p>
+        </p>
 
         <p className="brtext">
           Interested in sponsoring? Want more information? Email us at
-        {' '}
+          {' '}
           <b>
             sponsor@hackyourlearning.ca
-        </b>
+          </b>
         </p>
       </div>
 
