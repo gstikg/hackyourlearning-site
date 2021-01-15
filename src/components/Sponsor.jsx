@@ -7,7 +7,7 @@ import HYLButton from './HYLButton';
 
 const Sponsor = () => (
   <>
-    <div class="sponsor_gradient" id="#sponsor">
+    <div className="sponsor_gradient" id="#sponsor">
       <div className="center text">
         <h2><b>Meet Our Sponsors</b></h2>
       </div>
@@ -29,7 +29,10 @@ const Sponsor = () => (
       </div>
 
       <div className="button_position">
-        <HYLButton color="blue" width="400" onClick={(e) => {
+        <HYLButton
+          color="blue"
+          width="400"
+          onClick={(e) => {
             e.preventDefault();
             window.open(
               '', // Need to add website or form link here
