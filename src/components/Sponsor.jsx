@@ -3,6 +3,7 @@ import schulich from '../assets/schulich.png'; // Import schulich logo
 import HSBC from '../assets/HSBC.png';
 import zoo from '../assets/zoo.png';
 import '../stylesheets/Sponsor.scss';
+import HYLButton from '../components/HYLButton';
 
 const Sponsor = () => (
   <>
@@ -27,7 +28,19 @@ const Sponsor = () => (
     </div>
 
     <div className="button_position">
-      <button type="button" className="sponsor_button"><b>Sponsor the Impact</b></button>
+      <HYLButton
+        color="blue"
+        width="400"
+        onClick={(e) => {
+          e.preventDefault();
+          window.open(
+            '', // Need to add website or form link here
+            '_blank',
+          );
+        }}
+      >
+        <b>Sponsor the Impact</b>
+      </HYLButton>
     </div>
 
     <div className="center text">
