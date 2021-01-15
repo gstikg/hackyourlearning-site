@@ -15,9 +15,10 @@ const LandingPage = () => {
   
   useEffect(() => {
     let elementFound = document.getElementById(location.hash);
-    console.log(elementFound);
+
     if (elementFound) {
-      elementFound.scrollIntoView({behavior: "smooth"})
+      elementFound.scrollIntoView({behavior: "smooth"});
+      
     }
   }, [location])
 
