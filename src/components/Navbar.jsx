@@ -42,25 +42,24 @@ const Navbar = () => (
 
       <ReactNavbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          {/* the "to" prop refers to the classname */}
-          {/* Make sure to put classname of the parent div */}
-          <Link className="nav-link" to="about-info--container" spy={true} smooth={true}>
+
+          <Nav.Link href="/#about">
             About
-          </Link>
+          </Nav.Link>
 
-          <Link className="nav-link" to="landing-schedule--container" spy={true} smooth={true}>
+          <Nav.Link href="/#schedule">
             Schedule
-          </Link>
+          </Nav.Link>
 
-          {/* Add "to" once component is made */}
-          <Link className="nav-link" to="" spy={true} smooth={true}>
-            Schedule
-          </Link>
- 
-          {/* Add "to" once component is made */}
-          <Link className="nav-link" to="" spy={true} smooth={true}>
+          {/* Add id="#sponsors" in parent div of Sponsors component  */}
+          <Nav.Link href="/#sponsors">
+            Sponsors
+          </Nav.Link>
+
+          {/* Add id="#faq" in parent div of FAQ component  */}
+          <Nav.Link href="/#faq">
             FAQ
-          </Link>
+          </Nav.Link>
 
           {/* Login "button" */}
           <NavLink

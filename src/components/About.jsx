@@ -10,7 +10,7 @@ import schulich from '../assets/schulich.png';
 
 const About = () => (
   <>
-    <div className="about-info--container">
+    <div className="about-info--container" id="#about">
       <div className="section-break" />
 
       <div className="about-block about-block--about row alt-bg">
