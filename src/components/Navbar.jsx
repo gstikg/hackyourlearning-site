@@ -2,7 +2,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as ReactNavbar } from 'react-bootstrap';
-import { Link } from 'react-scroll'
 
 // Importing styles
 import '../stylesheets/navbar/Navbar.scss';
