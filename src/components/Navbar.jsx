@@ -41,35 +41,22 @@ const Navbar = () => (
 
       <ReactNavbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="first-link"
-          >
+
+          <Nav.Link href="/#about">
             About
           </Nav.Link>
 
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="second-link"
-          >
+          <Nav.Link href="/#schedule">
             Schedule
           </Nav.Link>
 
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="third-link"
-          >
+          {/* Add id="#sponsors" in parent div of Sponsors component  */}
+          <Nav.Link href="/#sponsors">
             Sponsors
           </Nav.Link>
 
-          <Nav.Link
-            href="#"
-            target="_blank"
-            className="last-link"
-          >
+          {/* Add id="#faq" in parent div of FAQ component  */}
+          <Nav.Link href="/#faq">
             FAQ
           </Nav.Link>
 
