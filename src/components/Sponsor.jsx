@@ -7,31 +7,30 @@ import HYLButton from './HYLButton';
 
 const Sponsor = () => (
   <>
-    <div className="sponsor_gradient" id="#sponsor">
-      <div className="center text">
-        <h2><b>Meet Our Sponsors</b></h2>
-      </div>
+    <div id="sponsors" className="sponsor-info--container">
+      <div className="section-break" />
 
-      <div className="about-block--text center">
+      <h3>Meet Our Sponsors</h3>
+
+      <div className="sponsor-text">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
         </p>
 
-        <p className="brtext">
-          Interested in sponsoring? Want more information? Email us at
-          {' '}
-          <b>
-            sponsor@hackyourlearning.ca
-          </b>
-        </p>
+        <div className="sponsor-text--contact">
+          <p>
+            Interested in sponsoring? Want more information?
+          </p>
+          <p className="sponsor-text--email">
+            Email us at <b>sponsor@hackyourlearning.ca </b>
+          </p>
+        </div>
       </div>
 
-      <div className="button_position">
+      <div className="sponsor--button">
         <HYLButton
           color="blue"
-          width="400"
+          width="200"
           onClick={(e) => {
             e.preventDefault();
             window.open(
@@ -40,34 +39,57 @@ const Sponsor = () => (
             );
           }}
         >
-          <b>Sponsor the Impact</b>
+          Sponsor the Impact
         </HYLButton>
       </div>
 
-      <div className="center text">
-        <h3><b>Our Sponsors</b></h3>
-      </div>
+      <div className="sponsor--sponsor-info">
+        <h4>Our Sponsors</h4>
 
-      <div className="zoom center">
-        <a href="https://www.hsbc.ca/" target="_blank" rel="noopener noreferrer">
-          <img src={HSBC} alt="Schulich logo" width="300" height="200" />
-        </a>
-      </div>
-
-      <div className="center text">
-        <h3><b>Our Partners</b></h3>
-      </div>
-
-      <div className="center">
-        <div className="zoom imgContainer">
-          <a href="https://schulich.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
-            <img src={schulich} alt="Schulich logo" width="280" height="240" />
+        <div className="sponsor--sponsor-pics">
+          <a
+            href="https://www.hsbc.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={HSBC}
+              alt="HSBC logo"
+              height="175"
+            />
           </a>
         </div>
+      </div>
 
-        <div className="zoom imgContainer">
-          <a href="https://www.facebook.com/zooengg/" target="_blank" rel="noopener noreferrer">
-            <img src={zoo} alt="Schulich logo" width="280" height="240" />
+
+      <div className="sponsor--partners-info">
+        <h4>Our Partners</h4>
+
+        <div className="sponsor--partner-pics">
+          <a
+            className="partner-icons"
+            href="https://schulich.ucalgary.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={schulich}
+              alt="schulich logo"
+              height="125"
+            />
+          </a>
+
+          <a
+            className="partner-icons"
+            href="https://www.facebook.com/zooengg/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={zoo}
+              alt="zoo logo"
+              height="125"
+            />
           </a>
         </div>
       </div>
