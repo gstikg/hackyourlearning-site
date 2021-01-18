@@ -5,8 +5,8 @@ import { useLocation } from 'react-router-dom';
 // Importing Project-Defined Components
 import LandingBanner from '../components/LandingBanner';
 import About from '../components/About';
-import Footer from '../components/Footer';
 import Sponsor from '../components/Sponsor';
+
 // Importing Styles
 import '../stylesheets/LandingPage.scss';
 
@@ -53,9 +53,6 @@ const LandingPage = () => {
       <div className="landing-FAQ--container">
         FAQ
       </div>
-
-      {/* Following content is for the Footer section */}
-      <Footer />
     </div>
   );
 }
