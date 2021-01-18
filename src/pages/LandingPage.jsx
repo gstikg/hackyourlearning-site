@@ -6,19 +6,19 @@ import { useLocation } from 'react-router-dom';
 import LandingBanner from '../components/LandingBanner';
 import About from '../components/About';
 import Footer from '../components/Footer';
-
+import Sponsor from '../components/Sponsor';
 // Importing Styles
 import '../stylesheets/LandingPage.scss';
 
 const LandingPage = () => {
   const location = useLocation();
-  
+
   useEffect(() => {
     let elementFound = document.getElementById(location.hash);
 
     if (elementFound) {
-      elementFound.scrollIntoView({behavior: "smooth"});
-      
+      elementFound.scrollIntoView({ behavior: "smooth" });
+
     }
   }, [location])
 
@@ -31,11 +31,11 @@ const LandingPage = () => {
       <About />
 
       {/* Following content is for the Schedule section */}
-      <div className="landing-schedule--container" id="#schedule">
+      <div id="schedule" className="landing-schedule--container">
         <div className="section-break" />
         <h3>Schedule</h3>
         <p>
-          The Hack Your Learning schedule is currenty
+          The Hack Your Learning schedule is currently
           {' '}
           <b>unavailable</b>
           .
@@ -46,7 +46,7 @@ const LandingPage = () => {
 
       {/* Following content is for the Sponsors section */}
       <div className="landing-sponsors--container">
-        Sponsors
+        <Sponsor />
       </div>
 
       {/* Following content is for the FAQ section */}
@@ -60,4 +60,4 @@ const LandingPage = () => {
   );
 }
 
-export default LandingPage;
+  export default LandingPage;
