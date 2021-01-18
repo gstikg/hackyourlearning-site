@@ -1,6 +1,6 @@
 // Importing Components from node_modules
 import React, { useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 // Importing project-defined components
 
@@ -8,6 +8,8 @@ import { Route, Switch } from 'react-router-dom';
 import LandingPage from '../pages/LandingPage';
 import OtherEventsPage from '../pages/OtherEventsPage';
 import Navbar from './Navbar';
+import Footer from '../components/Footer';
+
 /*
   Function used to update each page's <title> tag
   <title> tag is typically found in the public folder
@@ -37,6 +39,7 @@ function Routes() {
           <Page title="Hack You Learning">
             <Navbar />
             <LandingPage />
+            <Footer />
           </Page>
         )}
       />
@@ -48,9 +51,13 @@ function Routes() {
           <Page title="HYL Other Events">
             <Navbar />
             <OtherEventsPage />
+            <Footer />
           </Page>
         )}
       />
+
+      {/* Redirected to home when searching for a non-existent path */}
+      <Redirect to="/" />
 
     </Switch>
   );

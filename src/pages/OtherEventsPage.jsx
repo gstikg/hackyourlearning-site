@@ -36,7 +36,7 @@ const OtherEventsPage = () => (
     <div className="event-cards--container">
 
       {/* Following contains the content for upcoming events */}
-      <div className="upcoming-events--container">
+      <div id="upcoming" className="upcoming-events--container">
         <h1 className="other-events--title">Upcoming Events</h1>
         <div className="upcoming-events--cards">
 
@@ -131,7 +131,7 @@ const OtherEventsPage = () => (
       </div>
 
       {/* Following contains the content for past events */}
-      <div className="past-events--container">
+      <div id="past" className="past-events--container">
         <h1 className="other-events--title">Past Events</h1>
         <div className="past-events--cards">
 

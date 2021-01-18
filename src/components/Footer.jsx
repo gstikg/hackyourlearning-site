@@ -13,7 +13,7 @@ const Footer = () => (
   <>
     <div className="footer-container">
       <div className="row footer-upper">
-        <div className="col-xl-3 footer-about">
+        <div className="col-xl-2 footer-about">
           <div className="footer-about-inner">
             <img
               src={logo}
@@ -23,79 +23,73 @@ const Footer = () => (
                 width: '100%',
               }}
             />
-            <p>
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-              used in laying out print, graphic or web designs.
-              The passage is attributed to an unknown typesetter in the 15th
-              century who is thought to have scrambled parts of Cicero&apos;s De Finibus
-              Bonorum et Malorum for use in a type specimen book.
-            </p>
           </div>
         </div>
-        <div className="col-xl-6 footer-site-links">
+
+        {/* Contains site links */}
+        <div className="col-xl-4 footer-site-links">
           <div className="footer-site-links-wrapper">
             <div className="col-md footer-hack-info">
+
               <div className="footer-hack-info-wrapper">
                 <h3 className="footer-title">Hackathon Info</h3>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
-                    About
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
+
+                <div className="footer-site-links-text">
+                  <a
+                    href="https://forms.gle/R2tgjp2fDUzZNt9z9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Sign Up to Participate
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
+                  </a>
+                </div>
+                <div className="footer-site-links-text">
+                  <a href="/#about">
+                    About
+                  </a>
+                </div>
+                <div className="footer-site-links-text">
+                  <a href="/#schedule">
                     Schedule
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
+                  </a>
+                </div>
+                <div className="footer-site-links-text">
+                  <a href="/#sponsors">
                     Our Sponsors
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
-                    Schedule
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
+                  </a>
+                </div>
+                <div className="footer-site-links-text">
+                  <a href="/#faq">
                     FAQ
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
+
             <div className="col-md footer-other-events">
               <div className="footer-other-events-wrapper">
                 <h3 className="footer-title">Other Events</h3>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
-                    About Prep Sessions
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
-                    Prep Session #1
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
-                    Prep Session #2
-                  </div>
-                </a>
-                <a href="/#" target="_blank">
-                  <div className="footer-site-links-text">
+                <div className="footer-site-links-text">
+                  <a href="/other-events">
+                    Other Events
+                  </a>
+                </div>
+                <div className="footer-site-links-text">
+                  <a href="/other-events/#upcoming">
+                    Upcoming Events
+                  </a>
+                </div>
+                <div className="footer-site-links-text">
+                  <a href="/other-events/#past">
                     Past Events
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Following content is for the social media links */}
         <div className="col-xl-3 footer-contact-info">
           <div className="footer-social-wrapper">
             <div className="footer-social-title">
@@ -155,17 +149,21 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="footer-separator">
-        <hr />
-      </div>
-      <div className="row footer-footer">
+
+      {/* Horizontal rule */}
+      <hr />
+
+      {/* Contains the sub footer contain */}
+      <div className="row sub-footer--container">
         <div className="col-xl-6 footer-copyright">
           <Emoji text="Copyright &#xa9; 2020 Hack Your Learning | Made with :heart: in Calgary" />
         </div>
+
         <div className="col-xl-6 footer-conduct">
           <a href={codeOfConduct} target="_blank" rel="noopener noreferrer">Code of Conduct</a>
         </div>
       </div>
+
     </div>
   </>
 );
