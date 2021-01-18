@@ -22,7 +22,7 @@ const Sponsor = () => (
             Interested in sponsoring? Want more information?
           </p>
           <p className="sponsor-text--email">
-            Email us at <b>sponsor@hackyourlearning.ca </b>
+            Email us at <a href="mailto:sponsor@hackyourlearning.ca"><b>sponsor@hackyourlearning.ca</b></a>
           </p>
         </div>
       </div>
@@ -34,8 +34,7 @@ const Sponsor = () => (
           onClick={(e) => {
             e.preventDefault();
             window.open(
-              '', // Need to add website or form link here
-              '_blank',
+              'mailto:sponsor@hackyourlearning.ca'
             );
           }}
         >

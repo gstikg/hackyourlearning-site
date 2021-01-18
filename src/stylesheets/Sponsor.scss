@@ -41,6 +41,19 @@
     text-align: center;
     margin: 0;
   }
+
+  .sponsor-text--email a {
+    color: var(--body-color);
+
+    &:hover {
+      color: var(--header-color);
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .sponsor--button {
