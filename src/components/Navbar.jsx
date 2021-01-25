@@ -42,23 +42,23 @@ const Navbar = () => (
       <ReactNavbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
 
-          <Nav.Link href="/#about">
+          <Nav.Link className="first-link" href="/#about">
             About
           </Nav.Link>
 
-          <Nav.Link href="/#schedule">
+          <Nav.Link className="second-link" href="/#schedule">
             Schedule
           </Nav.Link>
 
           {/* Add id="#sponsors" in parent div of Sponsors component  */}
-          <Nav.Link href="/#sponsors">
+          <Nav.Link className="third-link" href="/#sponsors">
             Sponsors
           </Nav.Link>
 
           {/* Add id="#faq" in parent div of FAQ component  */}
-          <Nav.Link href="/#faq">
+          {/* <Nav.Link className="last-link" href="/#faq">
             FAQ
-          </Nav.Link>
+          </Nav.Link> */}
 
           {/* Login "button" */}
           <NavLink

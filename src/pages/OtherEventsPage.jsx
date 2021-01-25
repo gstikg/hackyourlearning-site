@@ -51,12 +51,15 @@ const OtherEventsPage = () => (
             <div className="session-description">
               <p>
                 Git is a powerful version control tool that can be extremely helpful for teams
-                wanting to collaborate on a project. It's a tool you will often see used in industry, so if you have yet to interact with Git before, now is the perfect opportunity!
+                wanting to collaborate on a project. It&#39;s a tool you will often see used in
+                industry, so if you have yet to interact with Git before, now is the perfect
+                opportunity!
               </p>
               <p>
                 <b>Learning Outcomes:</b>
                 <br />
-                1. Gain hands-on experience working with Git, with mentors ready to help you troubleshoot
+                1. Gain hands-on experience working with Git, with mentors ready to help you
+                troubleshoot
                 <br />
                 2. Learn important concepts associated with Git
                 <br />
@@ -80,18 +83,24 @@ const OtherEventsPage = () => (
           >
             <div className="session-description">
               <p>
-                Time is money, especially in hackathons! So if you're wanting to learn how to effectively manage your time during that hackathon time-crunch, then check out this prep session!
+                Time is money, especially in hackathons! So if you&#39;re wanting to learn how to
+                effectively manage your time during that hackathon time-crunch, then check out this
+                prep session!
               </p>
               <p>
-                What better way to work effectively than to integrate an agile methodology into your workflow. This session will show you one method in which you can develop an application starting all the way from the design phase to the implementation phase.
-                Not only that, you'll get experience playing at people's strength and how to communicate with them to create that "perfect" team.
+                What better way to work effectively than to integrate an agile methodology into
+                your workflow. This session will show you one method in which you can develop an
+                application starting all the way from the design phase to the implementation phase.
+                Not only that, you&#39;ll get experience playing at people&#39;s strength and how to
+                communicate with them to create that &#34;perfect&#34; team.
               </p>
               <p>
                 <b>Learning Outcomes:</b>
                 <br />
                 1. Practice thinking as a Software Engineer
                 <br />
-                2. Learn about the Software Development Process and gain experience in using the Agile methodology that is Scrum
+                2. Learn about the Software Development Process and gain experience in using the
+                Agile methodology that is Scrum
                 <br />
                 3. Engage in a team-based environment
               </p>
@@ -108,20 +117,28 @@ const OtherEventsPage = () => (
           >
             <div className="session-description">
               <p>
-                It's time for the real thing! On March 27th, we will be having our first every Hack Your Learning hackathon!
+                It&#39;s time for the real thing! On March 27th, we will be having our first every
+                Hack Your Learning hackathon!
               </p>
               <p>
-                Put your creativity and skills to the test in the high-paced environment, where you'll be competing along side many others to win prizes. But do not fret! This is still a learning opportunity, practice coding, gain connections, and most importantly, have fun!
+                Put your creativity and skills to the test in the high-paced environment, where
+                you&#39;ll be competing along side many others to win prizes. But do not fret! This
+                is still a learning opportunity, practice coding, gain connections, and most
+                importantly, have fun!
               </p>
               <p>
-                If you find yourself, and your team, struggling at any point. Don't worry, mentors will be on call to help work you through any significant issues you may have.
+                If you find yourself, and your team, struggling at any point. Don&#39;t worry,
+                mentors will be on call to help work you through any significant issues you may
+                have.
               </p>
               <p className="tip">
                 <i>
                   “A person becomes a star within the limits.”
                   <br />
                 </i>
-                Probably the most imposing characteristic of a hackathon is the time limit. So be ready to turn this threat into an opportunity and learn as much as you can in just a day!
+                Probably the most imposing characteristic of a hackathon is the time limit. So be
+                ready to turn this threat into an opportunity and learn as much as you can in just
+                a day!
               </p>
             </div>
 
@@ -174,7 +191,11 @@ const OtherEventsPage = () => (
           >
             <div className="session-description">
               <p>
-                Our first ever Hack Your Learning Prep Session! We'll be learning alongside you as we delve into the topic of Hackathons and prepare a mock problemset. Experience what it's like to participate in a hackathon, without the major stress associated with it. Plenty of mentors are available at your beck and call to assist you in any troubleshooting issues
+                Our first ever Hack Your Learning Prep Session! We&#39;ll be learning alongside you
+                as we delve into the topic of Hackathons and prepare a mock problemset. Experience
+                what it&#39;s like to participate in a hackathon, without the major stress
+                associated with it. Plenty of mentors are available at your beck and call to assist
+                you in any troubleshooting issues
               </p>
               <p>
                 <b>Learning Outcomes:</b>

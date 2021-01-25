@@ -14,13 +14,12 @@ const LandingPage = () => {
   const location = useLocation();
 
   useEffect(() => {
-    let elementFound = document.getElementById(location.hash);
+    const elementFound = document.getElementById(location.hash);
 
     if (elementFound) {
-      elementFound.scrollIntoView({ behavior: "smooth" });
-
+      elementFound.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [location])
+  }, [location]);
 
   return (
     <div className="landing-container">
@@ -45,16 +44,14 @@ const LandingPage = () => {
       </div>
 
       {/* Following content is for the Sponsors section */}
-      <div className="landing-sponsors--container">
-        <Sponsor />
-      </div>
+      <Sponsor />
 
       {/* Following content is for the FAQ section */}
-      <div className="landing-FAQ--container">
+      {/* <div className="landing-FAQ--container">
         FAQ
-      </div>
+      </div> */}
     </div>
   );
-}
+};
 
-  export default LandingPage;
+export default LandingPage;
