@@ -40,40 +40,6 @@ const OtherEventsPage = () => (
         <h1 className="other-events--title">Upcoming Events</h1>
         <div className="upcoming-events--cards">
 
-          {/* Session Card for GitHub Prep Session */}
-          <SessionCard
-            event="Winter Prep Session #1"
-            date="January 23rd, 2021"
-            location="Online"
-            image={github}
-            signup="http://bitly.ws/aV2u"
-          >
-            <div className="session-description">
-              <p>
-                Git is a powerful version control tool that can be extremely helpful for teams
-                wanting to collaborate on a project. It&#39;s a tool you will often see used in
-                industry, so if you have yet to interact with Git before, now is the perfect
-                opportunity!
-              </p>
-              <p>
-                <b>Learning Outcomes:</b>
-                <br />
-                1. Gain hands-on experience working with Git, with mentors ready to help you
-                troubleshoot
-                <br />
-                2. Learn important concepts associated with Git
-                <br />
-                3. Engage in a team-based environment
-              </p>
-              <p className="tip">
-                <i>
-                  Did you know that many recruiters and/or interviewers ask for GitHub profiles? A
-                  solid GitHub profile can be the first step to impressing them with your skills!
-                </i>
-              </p>
-            </div>
-          </SessionCard>
-
           <SessionCard
             event="Winter Prep Session #2"
             date="February 20th, 2021"
@@ -151,6 +117,40 @@ const OtherEventsPage = () => (
       <div id="past" className="past-events--container">
         <h1 className="other-events--title">Past Events</h1>
         <div className="past-events--cards">
+
+          {/* Session Card for GitHub Prep Session */}
+          <SessionCard
+            event="Winter Prep Session #1"
+            date="January 23rd, 2021"
+            location="Online"
+            image={github}
+            signup=""
+            >
+            <div className="session-description">
+              <p>
+                Git is a powerful version control tool that can be extremely helpful for teams
+                wanting to collaborate on a project. It&#39;s a tool you will often see used in
+                industry, so if you have yet to interact with Git before, now is the perfect
+                opportunity!
+              </p>
+              <p>
+                <b>Learning Outcomes:</b>
+                <br />
+                1. Gain hands-on experience working with Git, with mentors ready to help you
+                troubleshoot
+                <br />
+                2. Learn important concepts associated with Git
+                <br />
+                3. Engage in a team-based environment
+              </p>
+              <p className="tip">
+                <i>
+                  Did you know that many recruiters and/or interviewers ask for GitHub profiles? A
+                  solid GitHub profile can be the first step to impressing them with your skills!
+                </i>
+              </p>
+            </div>
+          </SessionCard>
 
           {/* Session Card for SEC */}
           <SessionCard
