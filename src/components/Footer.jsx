@@ -11,14 +11,12 @@ import {
 import logo from '../assets/Light_Logo_Text.png';
 import codeOfConduct from '../assets/HYL_code_of_conduct.pdf';
 
-
 const Footer = () => (
   <>
     <div className="footer-container">
       <div className="row footer-upper">
 
         <div className="footer-upper-left">
-
 
           <div className="footer-about">
             <img
@@ -46,27 +44,27 @@ const Footer = () => (
                   rel="noopener noreferrer"
                 >
                   Sign Up to Participate
-                  </a>
+                </a>
               </div>
               <div className="footer-site-links-text">
                 <a href="/#about">
                   About
-                  </a>
+                </a>
               </div>
               <div className="footer-site-links-text">
                 <a href="/#schedule">
                   Schedule
-                  </a>
+                </a>
               </div>
               <div className="footer-site-links-text">
                 <a href="/#sponsors">
                   Our Sponsors
-                  </a>
+                </a>
               </div>
               <div className="footer-site-links-text">
                 <a href="/#faq">
                   FAQ
-                  </a>
+                </a>
               </div>
               {/* </div> */}
             </div>
@@ -77,17 +75,17 @@ const Footer = () => (
               <div className="footer-site-links-text">
                 <a href="/other-events">
                   Other Events
-                  </a>
+                </a>
               </div>
               <div className="footer-site-links-text">
                 <a href="/other-events/#upcoming">
                   Upcoming Events
-                  </a>
+                </a>
               </div>
               <div className="footer-site-links-text">
                 <a href="/other-events/#past">
                   Past Events
-                  </a>
+                </a>
               </div>
               {/* </div> */}
             </div>
