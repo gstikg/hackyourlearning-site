@@ -1,4 +1,6 @@
 .sponsor-info--container {
+  padding: 0 0 65px;
+
   .section-break {
     min-height: 75px;
     max-height: 75px;
@@ -29,8 +31,12 @@
   margin: 0 auto;
   width: 500px;
 
-  @media (max-width: 500px) {
-  width: 375px;
+  @media (max-width: 992px) {
+    width: 450px;
+  }
+
+  @media (max-width: 576px) {
+    width: 375px;
   }
 
   p {
@@ -70,7 +76,6 @@
   .sponsor--sponsor-pics {
     text-align: center;
 
-
     .partner-icons,
     .sponsor-icons {
       margin: 0 25px;
@@ -80,4 +85,10 @@
 
 .sponsor--partners-info {
   margin: 70px 0 0;
+}
+
+@media (max-width: 768px) {
+  .sponsor--sponsor-pics img {
+    height: 100px;
+  }
 }

@@ -8,7 +8,8 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import LandingPage from '../pages/LandingPage';
 import OtherEventsPage from '../pages/OtherEventsPage';
 import Navbar from './Navbar';
-import Footer from '../components/Footer';
+import Footer from './Footer';
+import ToTop from './ToTop';
 
 /*
   Function used to update each page's <title> tag
@@ -37,6 +38,7 @@ function Routes() {
         path="/"
         render={() => (
           <Page title="Hack You Learning">
+            <ToTop />
             <Navbar />
             <LandingPage />
             <Footer />
@@ -49,6 +51,7 @@ function Routes() {
         path="/other-events"
         render={() => (
           <Page title="HYL Other Events">
+            <ToTop />
             <Navbar />
             <OtherEventsPage />
             <Footer />

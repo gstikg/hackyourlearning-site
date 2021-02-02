@@ -14,7 +14,8 @@ const Sponsor = () => (
 
       <div className="sponsor-text">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          It is with the help of our sponsors that we can create the environment that allows
+          emerging emerging developers, and designers to bring their ideas to life.
         </p>
 
         <div className="sponsor-text--contact">
@@ -22,7 +23,9 @@ const Sponsor = () => (
             Interested in sponsoring? Want more information?
           </p>
           <p className="sponsor-text--email">
-            Email us at <a href="mailto:sponsor@hackyourlearning.ca"><b>sponsor@hackyourlearning.ca</b></a>
+            Email us at
+            {' '}
+            <a href="mailto:sponsor@hackyourlearning.ca"><b>sponsor@hackyourlearning.ca</b></a>
           </p>
         </div>
       </div>
@@ -34,7 +37,7 @@ const Sponsor = () => (
           onClick={(e) => {
             e.preventDefault();
             window.open(
-              'mailto:sponsor@hackyourlearning.ca'
+              'mailto:sponsor@hackyourlearning.ca',
             );
           }}
         >
@@ -54,12 +57,11 @@ const Sponsor = () => (
             <img
               src={HSBC}
               alt="HSBC logo"
-              height="175"
+              height="125"
             />
           </a>
         </div>
       </div>
-
 
       <div className="sponsor--partners-info">
         <h4>Our Partners</h4>
