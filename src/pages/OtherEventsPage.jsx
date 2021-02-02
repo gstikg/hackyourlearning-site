@@ -125,7 +125,7 @@ const OtherEventsPage = () => (
             location="Online"
             image={github}
             signup=""
-            >
+          >
             <div className="session-description">
               <p>
                 Git is a powerful version control tool that can be extremely helpful for teams

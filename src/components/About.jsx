@@ -28,10 +28,18 @@ const About = () => (
       <div className="about-block--text about col-lg-5 col-md-6 col-sm-12 col-xs-12">
         <h3>About</h3>
         <p>
-          Hack Your Learning is a brand new student-run, not-for-profit initiative born out of a research project. The research project studied the benefits, and impact that Hackathons had towards improving student experiences. It has since evolved into a full-fledged committee of passionate students, and professors working hard to present an annual hackathon and multiple prep sessions that help prepare students in a variety of programming topics.
+          Hack Your Learning is a brand new student-run, not-for-profit initiative born out of a
+          research project. The research project studied the benefits, and impact that Hackathons
+          had towards improving student experiences. It has since evolved into a full-fledged
+          committee of passionate students, and professors working hard to present an annual
+          hackathon and multiple prep sessions that help prepare students in a variety of
+          programming topics.
         </p>
         <p>
-          Hack Your Learning strives to challenge students of all skill levels to think critically and presents real-life problems where students can apply their academic knowledge. By encouraging student participation in hackathons, Hack Your Learning hopes to challenge, elevate, and grow students to the next level through out-of-class learning opportunities.
+          Hack Your Learning strives to challenge students of all skill levels to think critically
+          and presents real-life problems where students can apply their academic knowledge. By
+          encouraging student participation in hackathons, Hack Your Learning hopes to challenge,
+          elevate, and grow students to the next level through out-of-class learning opportunities.
         </p>
       </div>
     </div>
@@ -40,7 +48,12 @@ const About = () => (
       <div className="about-block--text col-lg-5 col-md-6 col-sm-12 col-xs-12">
         <h3>Schulich Engineering</h3>
         <p>
-          Through the assistance of the Schulich School of Engineering (SSE) at the University of Calgary, we are able present Hack Your Learning. The SSE is a leader in engineering education and is committed to ensuring digital literacy amongst the engineers of tomorrow. By providing interactive learning experiences inside and outside of the classroom, the SSE is able to provide students with an engaging environment to develop the necessary skills to succeed in industry.
+          Through the assistance of the Schulich School of Engineering (SSE) at the University of
+          Calgary, we are able present Hack Your Learning. The SSE is a leader in engineering
+          education and is committed to ensuring digital literacy amongst the engineers of
+          tomorrow. By providing interactive learning experiences inside and outside of the
+          classroom, the SSE is able to provide students with an engaging environment to develop
+          the necessary skills to succeed in industry.
         </p>
       </div>
 

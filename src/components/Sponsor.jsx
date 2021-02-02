@@ -15,7 +15,7 @@ const Sponsor = () => (
       <div className="sponsor-text">
         <p>
           It is with the help of our sponsors that we can create the environment that allows
-          emerging emerging developers, and designers to bring their ideas to life.
+          emerging developers, and designers to bring their ideas to life.
         </p>
 
         <div className="sponsor-text--contact">
