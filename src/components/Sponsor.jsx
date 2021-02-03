@@ -1,9 +1,17 @@
 import React from 'react';
-import schulich from '../assets/schulich.png'; // Import schulich logo
+
+// Importing project-defined component
+import HYLButton from './HYLButton';
+
+// Importing styling
+import '../stylesheets/Sponsor.scss';
+
+// Importing static assets
+import schulich from '../assets/schulich.png';
 import HSBC from '../assets/HSBC.png';
 import zoo from '../assets/zoo.png';
-import '../stylesheets/Sponsor.scss';
-import HYLButton from './HYLButton';
+import ieee from '../assets/IEEE.png';
+
 
 const Sponsor = () => (
   <>
@@ -92,6 +100,19 @@ const Sponsor = () => (
               height="125"
             />
           </a>
+          <a
+            className="partner-icons"
+            href="https://southern-alberta.ieee.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={ieee}
+              alt="ieee logo"
+              height="125"
+            />
+          </a>
+
         </div>
       </div>
     </div>
