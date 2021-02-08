@@ -45,7 +45,7 @@ const OtherEventsPage = () => (
             date="February 20th, 2021"
             location="Online"
             image={logo}
-            signup="Coming Soon"
+            signup="https://forms.gle/oPTH2fjyKkKtjLqm8"
           >
             <div className="session-description">
               <p>
