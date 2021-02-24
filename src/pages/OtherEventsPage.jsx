@@ -41,39 +41,6 @@ const OtherEventsPage = () => (
         <div className="upcoming-events--cards">
 
           <SessionCard
-            event="Winter Prep Session #2"
-            date="February 20th, 2021"
-            location="Online"
-            image={logo}
-            signup="https://forms.gle/oPTH2fjyKkKtjLqm8"
-          >
-            <div className="session-description">
-              <p>
-                Time is money, especially in hackathons! So if you&#39;re wanting to learn how to
-                effectively manage your time during that hackathon time-crunch, then check out this
-                prep session!
-              </p>
-              <p>
-                What better way to work effectively than to integrate an agile methodology into
-                your workflow. This session will show you one method in which you can develop an
-                application starting all the way from the design phase to the implementation phase.
-                Not only that, you&#39;ll get experience playing at people&#39;s strength and how to
-                communicate with them to create that &#34;perfect&#34; team.
-              </p>
-              <p>
-                <b>Learning Outcomes:</b>
-                <br />
-                1. Practice thinking as a Software Engineer
-                <br />
-                2. Learn about the Software Development Process and gain experience in using the
-                Agile methodology that is Scrum
-                <br />
-                3. Engage in a team-based environment
-              </p>
-            </div>
-          </SessionCard>
-
-          <SessionCard
             className="one-line"
             event="HYL Hackathon"
             date="March 27th, 2021"
@@ -117,6 +84,40 @@ const OtherEventsPage = () => (
       <div id="past" className="past-events--container">
         <h1 className="other-events--title">Past Events</h1>
         <div className="past-events--cards">
+
+
+        <SessionCard
+            event="Winter Prep Session #2"
+            date="February 20th, 2021"
+            location="Online"
+            image={logo}
+            signup=""
+          >
+            <div className="session-description">
+              <p>
+                Time is money, especially in hackathons! So if you&#39;re wanting to learn how to
+                effectively manage your time during that hackathon time-crunch, then check out this
+                prep session!
+              </p>
+              <p>
+                What better way to work effectively than to integrate an agile methodology into
+                your workflow. This session will show you one method in which you can develop an
+                application starting all the way from the design phase to the implementation phase.
+                Not only that, you&#39;ll get experience playing at people&#39;s strength and how to
+                communicate with them to create that &#34;perfect&#34; team.
+              </p>
+              <p>
+                <b>Learning Outcomes:</b>
+                <br />
+                1. Practice thinking as a Software Engineer
+                <br />
+                2. Learn about the Software Development Process and gain experience in using the
+                Agile methodology that is Scrum
+                <br />
+                3. Engage in a team-based environment
+              </p>
+            </div>
+          </SessionCard>
 
           {/* Session Card for GitHub Prep Session */}
           <SessionCard
