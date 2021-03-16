@@ -44,7 +44,7 @@ const LandingBanner = () => (
           onClick={(e) => {
             e.preventDefault();
             window.open(
-              'https://forms.gle/MJdTzDtxkyP4xQg29',
+              'https://forms.gle/CVzZ6yLQvFM4PyqW8',
               '_blank',
             );
           }}
