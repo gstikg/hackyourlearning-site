@@ -41,18 +41,102 @@ const OtherEventsPage = () => (
         <div className="upcoming-events--cards">
 
           <SessionCard
-            className="one-line"
-            event="HYL Hackathon"
-            date="March 27th, 2021"
+            event="Design Thinking Process"
+            date="October 22nd, 2021"
             location="Online"
             image={logo}
-            signup="Coming Soon"
+            signup="https://discord.gg/kKSC7hXwUK"
+          >
+            <div className="session-description">
+              <p>A theory based session with a larger focus on design thinking with some exercises.</p>
+              <p>Come learn the essentials of design thinking, why it matters, and get some practise with us so you can apply it to your next team project.</p>
+            </div>
+          </SessionCard>
+
+          <SessionCard
+            className="one-line"
+            event="Speaker Session"
+            date="October 26th"
+            location="Online"
+            image={logo}
+            signup="https://discord.gg/kKSC7hXwUK"
+          >
+            <div className="session-description">
+              <p>Cybersecurity Presentation ft. InfoSec Club.</p>
+              <p>
+                Donovan Tilldill is set to present via Zoom on the topic of Cybersecurity.
+                He will touch upon his personal background, the mindset needed for security, and the importance of security in systems.
+              </p>
+              <p>
+              Donovan Tindill (<a href="https://www.linkedin.com/in/donovantindill/" target="_blank">LinkedIn</a>) is a control systems cybersecurity subject matter expert with the Honeywell Industrial Cybersecurity team. He spent over 17 years customer-facing as a control systems cybersecurity consultant in Canada, training/mentoring the technical team and leading major projects across Consulting Services. Donovan supports global industrial cybersecurity by volunteering to teach, contributing to standards, supporting industry conferences, and sharing thought-provoking presentations. He is a former ISA-99/62443 trainer, working group co-chair, and contributor. Donovan is an advisor to both the United States and Canadian government control systems cybersecurity conferences (i.e., US DHS ICSJWG Vice-Chair and Public Safety Canada ICS Symposium Vendor Seat) helping select speakers, drive awareness, and increase knowledge in North America. Donovan has an applied Bachelor’s Degree in Network Engineering & Management (NET:1999, BAIST-NM:2003) from the Northern Alberta Institute of Technology (NAIT) and holds CISSP and GICSP certifications.
+              </p>
+            </div>
+          </SessionCard>
+
+          <SessionCard
+            event="Cybersecurity Workshop"
+            date="November 4th"
+            location="Online"
+            image={logo}
+            signup="https://discord.gg/kKSC7hXwUK"
+          >
+            <div className="session-description">
+              <p>Cybersecurity Workshop ft. InfoSec Club.</p>
+            </div>
+          </SessionCard>
+
+          <SessionCard
+            event="Game Design Workshop"
+            date="TBD"
+            location="Online"
+            image={logo}
+            signup="https://discord.gg/kKSC7hXwUK"
+          >
+            <div className="session-description">
+              <p></p>
+            </div>
+          </SessionCard>
+
+          <SessionCard
+            event="HTML/CSS Workshop"
+            date="TBD"
+            location="Online"
+            image={logo}
+            signup="https://discord.gg/kKSC7hXwUK"
           >
             <div className="session-description">
               <p>
-                It&#39;s time for the real thing! On March 27th, we will be having our first every
-                Hack Your Learning hackathon!
+                A hands-on session where participants will learn how to create their own website. Basic HTML and CSS concepts will be taught.
+                Participants will create a GitHub repository for their website and then deploy it to Netlify.
               </p>
+            </div>
+          </SessionCard>
+
+          {/*
+          <SessionCard
+            event="Hardware-Based Workshop"
+            date="TBD"
+            location="Online"
+            image={logo}
+            signup="https://discord.gg/kKSC7hXwUK"
+          >
+            <div className="session-description">
+              <p>A collaboration with ACRobotics.</p>
+              <p>
+                Programming session with Microcontrollers, Arduinos, and dedicated IoT hardware.
+              </p>
+            </div>
+          </SessionCard>
+          */}
+
+          <SessionCard
+            event="Winter Hackathon"
+            date="TBD"
+            location="Online"
+            image={logo}
+            signup="https://discord.gg/kKSC7hXwUK"
+          >
+            <div className="session-description">
               <p>
                 Put your creativity and skills to the test in the high-paced environment, where
                 you&#39;ll be competing along side many others to win prizes. But do not fret! This
@@ -74,9 +158,7 @@ const OtherEventsPage = () => (
                 a day!
               </p>
             </div>
-
           </SessionCard>
-
         </div>
       </div>
 
@@ -85,6 +167,54 @@ const OtherEventsPage = () => (
         <h1 className="other-events--title">Past Events</h1>
         <div className="past-events--cards">
 
+        <SessionCard
+          className="one-line"
+          event="Version Control"
+          date="October 5th, 2021"
+          location="Online"
+          image={github}
+          signup=""
+        >
+          <div className="session-description">
+            <p>A session running through the basics of version control.</p>
+          </div>
+        </SessionCard>
+
+        <SessionCard
+          className="one-line"
+          event="HYL Hackathon"
+          date="March 27th, 2021"
+          location="Online"
+          image={logo}
+          signup=""
+        >
+          <div className="session-description">
+            <p>
+              It&#39;s time for the real thing! On March 27th, we will be having our first ever
+              Hack Your Learning hackathon!
+            </p>
+            <p>
+              Put your creativity and skills to the test in the high-paced environment, where
+              you&#39;ll be competing along side many others to win prizes. But do not fret! This
+              is still a learning opportunity, practice coding, gain connections, and most
+              importantly, have fun!
+            </p>
+            <p>
+              If you find yourself, and your team, struggling at any point. Don&#39;t worry,
+              mentors will be on call to help work you through any significant issues you may
+              have.
+            </p>
+            <p className="tip">
+              <i>
+                “A person becomes a star within the limits.”
+                <br />
+              </i>
+              Probably the most imposing characteristic of a hackathon is the time limit. So be
+              ready to turn this threat into an opportunity and learn as much as you can in just
+              a day!
+            </p>
+          </div>
+        </SessionCard>
 
         <SessionCard
             event="Winter Prep Session #2"
