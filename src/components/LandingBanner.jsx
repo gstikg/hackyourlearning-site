@@ -44,7 +44,7 @@ const LandingBanner = () => (
           onClick={(e) => {
             e.preventDefault();
             window.open(
-              'https://forms.gle/CVzZ6yLQvFM4PyqW8',
+              'https://forms.gle/MJdTzDtxkyP4xQg29',
               '_blank',
             );
           }}
@@ -53,7 +53,7 @@ const LandingBanner = () => (
         </HYLButton>
       </div>
 
-      <h5 className="event-info--date">March 27, 2021 • Virtual Event</h5>
+      <h5 className="event-info--date">March 26-27, 2022 • Virtual Event</h5>
 
       {/* Counter Section */}
       <LandingCountdown />

@@ -8,7 +8,7 @@ export default class Timer extends React.Component {
 
     // Set the state directly. Use props if necessary.
     this.state = {
-      endDate: new Date('March 27, 2021 09:00:00'),
+      endDate: new Date('March 26, 2022 09:00:00'),
       days: 0,
       hours: 0,
       minutes: 0,
