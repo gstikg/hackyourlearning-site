@@ -9,7 +9,7 @@ import '../stylesheets/OtherEventsPage.scss';
 
 // Importing Static assets
 import github from '../assets/sessions/github.png';
-import sec from '../assets/sessions/sec.png';
+// import sec from '../assets/sessions/sec.png';
 import logo from '../assets/Light_Logo.png';
 
 const OtherEventsPage = () => (
