@@ -250,7 +250,7 @@ const OtherEventsPage = () => (
             </div>
           </SessionCard>
 
-          {/* Session Card for GitHub Prep Session */}
+          // Session Card for GitHub Prep Session 
           <SessionCard
             event="Winter Prep Session #1"
             date="January 23rd, 2021"
@@ -284,7 +284,7 @@ const OtherEventsPage = () => (
             </div>
           </SessionCard>
 
-          {/* Session Card for SEC */}
+          // Session Card for SEC 
           <SessionCard
             event="SEC: Programming Division"
             date="November 7th, 2020"
@@ -313,7 +313,7 @@ const OtherEventsPage = () => (
             </div>
           </SessionCard>
 
-          {/* Session Card for our first ever prep session */}
+          // Session Card for our first ever prep session
           <SessionCard
             event="Fall Prep Session #1"
             date="October 17th, 2020"
